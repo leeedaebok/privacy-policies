@@ -5,6 +5,6 @@
 | 앱 | URL |
 |---|---|
 | Bok Storage Manager | https://leeedaebok.github.io/privacy-policies/bokstoragemanager/ |
-| haneul: Smart Weather Guide | https://leeedaebok.github.io/privacy-policies/haneul/ |
+| 하늘 - 어제 오늘 날씨 비교 (Yesterday Weather Compare) | https://leeedaebok.github.io/privacy-policies/haneul/ |
 
 새 앱 추가 시: `<앱이름>/index.html` 폴더를 만들고 루트 `index.html` 목록에 링크를 추가합니다.
