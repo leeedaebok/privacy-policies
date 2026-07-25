@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>사장님 세무캘린더 — 개인정보처리방침</title>
+<style>
+  body { font-family: 'Segoe UI', 'Malgun Gothic', sans-serif; line-height: 1.7; color: #222; max-width: 760px; margin: 0 auto; padding: 24px 20px 60px; }
+  h1 { font-size: 1.5rem; border-bottom: 2px solid #1a73e8; padding-bottom: 12px; }
+  h2 { font-size: 1.2rem; margin-top: 40px; padding-bottom: 8px; border-bottom: 1px solid #ddd; }
+  h3 { font-size: 1.05rem; margin-top: 28px; color: #1a73e8; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  .date { color: #666; margin-top: 40px; font-size: 0.95rem; }
+  a { color: #1a73e8; }
+  table.id-table { border-collapse: collapse; margin: 16px 0; width: 100%; }
+  table.id-table th, table.id-table td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; font-size: 0.95rem; }
+  table.id-table th { background: #f5f7fa; white-space: nowrap; }
+</style>
+</head>
+<body>
+
+<h1>사장님 세무캘린더<br>개인정보처리방침</h1>
+
+<p><strong>시행일자: 2026년 7월 25일</strong></p>
+
+<table class="id-table">
+  <tr><th>앱 이름 (Google Play)</th><td>사장님 세무캘린더</td></tr>
+  <tr><th>패키지명</th><td>com.bok.semucal</td></tr>
+  <tr><th>개발자</th><td>복군 (Bokgun)</td></tr>
+  <tr><th>문의</th><td>leeedaebok@gmail.com</td></tr>
+</table>
+
+<p>본 개인정보처리방침은 개발자 '복군'이 Google Play에 게시한 모바일 애플리케이션 "사장님 세무캘린더"(이하 "앱")가 사용자의 개인정보를 어떻게 처리하는지 안내합니다.</p>
+
+<h2>1. 기본 원칙</h2>
+<p>본 앱은 <strong>회원가입·로그인·본인인증을 요구하지 않으며, 이름·연락처·사업자등록번호 등 사용자를 식별할 수 있는 정보를 일절 수집하지 않습니다.</strong> 홈택스·위택스 등 외부 세무 시스템과 연동하지 않으며, 매출·장부 등 사업 데이터를 입력받거나 전송하지 않습니다.</p>
+
+<h2>2. 수집·이용하는 정보</h2>
+
+<h3>2.1 사용자 직접 입력 정보 (기기 내부에만 저장)</h3>
+<ul>
+  <li><strong>사업자 유형</strong>(간이과세자 / 일반과세자 / 법인 / 프리랜서 / 면세사업자), <strong>직원 유무</strong>, <strong>사업장 자가 소유 여부</strong>, <strong>인허가 업종 여부</strong> — 표시할 세무 일정을 고르기 위한 분류값입니다.</li>
+  <li><strong>알림 설정</strong>(알림 on/off, D-7·D-3·D-1 단계, 알림 시각), <strong>화면 테마 설정</strong>.</li>
+  <li><strong>계산기 입력값</strong>(매출·매입액, 과세표준, 월 보수, 지급액 등) — 화면에서 계산에 사용될 뿐 <strong>저장되지도, 외부로 전송되지도 않습니다.</strong></li>
+</ul>
+<p>위 정보는 모두 <strong>안드로이드 기기 내부 저장소(SharedPreferences)에만</strong> 보관되며 서버로 전송되지 않습니다.</p>
+
+<h3>2.2 기기 권한</h3>
+<ul>
+  <li><strong>알림(POST_NOTIFICATIONS):</strong> 세금 신고·납부 기한 알림을 표시하기 위해 사용합니다. 거부해도 앱의 나머지 기능은 정상 동작합니다.</li>
+  <li><strong>인터넷 / 네트워크 상태:</strong> 세무 일정 데이터 갱신과 광고 표시에 사용합니다.</li>
+  <li><strong>부팅 완료 수신(RECEIVE_BOOT_COMPLETED):</strong> 기기를 재시작해도 예약된 기한 알림이 유지되도록 알람을 다시 등록하기 위해 사용합니다.</li>
+</ul>
+<p>연락처·위치·카메라·저장소 등 개인정보와 직접 관련된 권한은 요청하지 않습니다.</p>
+
+<h3>2.3 세무 일정 데이터 갱신</h3>
+<p>공휴일 순연이나 국세청의 기한 연장 등을 반영하기 위해, 앱은 개발자가 관리하는 공개 저장소(GitHub)에서 세무 일정 JSON 파일을 내려받습니다. 이 통신은 <strong>파일을 받아오기만 하는 단방향 요청</strong>이며, 사용자의 사업자 유형이나 설정값을 서버로 보내지 않습니다.</p>
+
+<h3>2.4 광고 식별자 (Google AdMob)</h3>
+<p>앱은 Google AdMob 배너·전면 광고를 표시하며, 광고 송출 및 성과 측정을 위해 광고 ID, 기기 정보, IP 주소 등이 처리될 수 있습니다.</p>
+
+<h3>2.5 사용 통계 (Google Analytics for Firebase)</h3>
+<p>앱 이용 현황을 파악하고 서비스를 개선하기 위해 Google Analytics for Firebase를 사용합니다. 이를 통해 앱 인스턴스 ID와 함께 다음과 같은 <strong>비식별 이용 이벤트</strong>가 자동으로 수집됩니다.</p>
+<ul>
+  <li>화면 조회(일정 목록, 일정 상세, 계산기, 설정 등)</li>
+  <li>온보딩 완료 및 프로필 변경 시의 <strong>사업자 유형 분류값</strong>(예: "일반과세자"), 직원·자가소유·인허가 해당 여부</li>
+  <li>일정 상세 열람, 국세청·위택스 공식 안내 링크 열기</li>
+  <li>계산기 탭 선택 및 사용 여부 (<strong>입력 금액은 수집하지 않으며 자릿수 규모만</strong> 기록)</li>
+  <li>알림 예약·표시·클릭, 알림 설정 변경, 알림 권한 허용 여부</li>
+  <li>화면 테마 변경, 위젯 갱신, 일정 데이터 갱신 성공 여부</li>
+</ul>
+<p>수집되는 정보는 통계 목적의 비식별 정보이며, <strong>이름·이메일·전화번호·사업자등록번호 등 사용자를 직접 식별할 수 있는 정보나 계산기에 입력한 실제 금액은 수집하지 않습니다.</strong></p>
+
+<h2>3. 개인정보 보유 기간</h2>
+<p>사용자가 선택·입력한 모든 정보는 <strong>기기 내부에만 존재</strong>하며, 사용자가 앱 데이터를 삭제하거나 앱을 제거하면 함께 삭제됩니다. Firebase를 통해 자동 수집된 통계 정보는 Google의 데이터 보관 정책에 따라 보관 후 자동 파기됩니다.</p>
+
+<h2>4. 제3자 제공 및 국외 이전</h2>
+<p>사용자 정보를 제3자에게 판매하거나 제공하지 않습니다. 다만 아래 Google 서비스를 통해 수집된 정보는 Google LLC(미국 소재)가 운영하는 서버에서 처리·보관될 수 있습니다.</p>
+<ul>
+  <li><a href="https://policies.google.com/privacy">Google AdMob</a> — 광고 송출</li>
+  <li><a href="https://firebase.google.com/support/privacy">Google Analytics for Firebase</a> — 이용 통계 분석</li>
+</ul>
+
+<h2>5. 처리 위탁</h2>
+<p>별도의 개인정보 처리 위탁은 없습니다.</p>
+
+<h2>6. 정보주체의 권리</h2>
+<ul>
+  <li>사업자 유형·알림·테마 설정은 앱 내 [설정] 화면에서 언제든지 변경할 수 있습니다.</li>
+  <li>알림 권한은 기기 설정에서 언제든지 철회할 수 있습니다.</li>
+  <li>광고 식별자 재설정·삭제: 기기 설정 → Google → 광고</li>
+  <li>기기에 저장된 모든 정보 삭제: 기기 설정 → 애플리케이션 → 사장님 세무캘린더 → 저장공간 → 데이터 삭제, 또는 앱 제거</li>
+  <li>수집된 분석 데이터의 삭제 요청: 아래 문의처로 요청 시 지체 없이 처리합니다.</li>
+</ul>
+
+<h2>7. 안전성 확보</h2>
+<p>사용자 설정 데이터는 기기 내부에만 보관되며, 외부 통신은 HTTPS만 사용합니다.</p>
+
+<h2>8. 아동 개인정보</h2>
+<p>본 앱은 사업자를 대상으로 하며 만 14세 미만을 주요 대상으로 하지 않습니다. 아동의 정보를 별도로 수집하지 않습니다.</p>
+
+<h2>9. 세무 관련 면책</h2>
+<p>본 앱이 제공하는 세무 일정·계산 결과는 <strong>일반적인 안내와 참고용</strong>이며, 세무 상담이나 신고 대행이 아닙니다. 실제 신고·납부 기한과 세액은 업종·과세유형·개별 사정에 따라 달라질 수 있으므로 국세청(홈택스)·위택스 또는 세무 전문가를 통해 확인하시기 바랍니다. 본 앱의 정보를 근거로 한 신고 누락·가산세 등에 대해 개발자는 책임을 지지 않습니다.</p>
+
+<h2>10. 방침 변경</h2>
+<p>방침이 변경되는 경우 앱 업데이트와 함께 적용되며, 본 문서에 반영하고 시행일자를 갱신합니다.</p>
+
+<h2>11. 연락처</h2>
+<p><strong>이메일:</strong> leeedaebok@gmail.com</p>
+
+<p class="date">시행일: 2026년 7월 25일</p>
+
+</body>
+</html>
