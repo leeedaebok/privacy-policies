@@ -5,6 +5,7 @@
 | 앱 | URL |
 |---|---|
 | Bok 스토리지 매니저 - 파일 관리자 | https://leeedaebok.github.io/privacy-policies/bokstoragemanager/ |
+| 매일 성경 통독 - 오늘의 말씀 (Daily Bible) | https://leeedaebok.github.io/privacy-policies/dailybible/ |
 | 하늘 - 어제 오늘 날씨 비교 (Yesterday Weather Compare) | https://leeedaebok.github.io/privacy-policies/haneul/ |
 | 칼로체크인 - 무료 칼로리 계산 식단관리 | https://leeedaebok.github.io/privacy-policies/kalocheckin/ |
 | 사장님 세무캘린더 | https://leeedaebok.github.io/privacy-policies/semucalendar/ |
