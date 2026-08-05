@@ -8,6 +8,7 @@
 | 매일 성경 통독 - 오늘의 말씀 (Daily Bible) | https://leeedaebok.github.io/privacy-policies/dailybible/ |
 | 하늘 - 어제 오늘 날씨 비교 (Yesterday Weather Compare) | https://leeedaebok.github.io/privacy-policies/haneul/ |
 | 칼로체크인 - 무료 칼로리 계산 식단관리 | https://leeedaebok.github.io/privacy-policies/kalocheckin/ |
+| 산도장 - 봉우리 등산 도감 | https://leeedaebok.github.io/privacy-policies/sandojang/ |
 | 사장님 세무캘린더 | https://leeedaebok.github.io/privacy-policies/semucalendar/ |
 
 새 앱 추가 시: `<앱이름>/index.html` 폴더를 만들고 루트 `index.html` 목록에 링크를 추가합니다.
