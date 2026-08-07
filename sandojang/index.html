@@ -23,7 +23,7 @@
 
 <h1>산도장<br>(Sandojang - 봉우리 등산 도감)<br>Privacy Policy / 개인정보처리방침</h1>
 
-<p><strong>Last updated: August 7, 2026</strong></p>
+<p><strong>Last updated: August 8, 2026</strong></p>
 
 <table class="id-table">
   <tr><th>App name (Google Play)</th><td>산도장 - 봉우리 등산 도감 / Sandojang</td></tr>
@@ -39,10 +39,12 @@
   <strong>요약:</strong> 이 앱은 등산 기록을 위해 <strong>위치 정보를 사용</strong>하지만,
   수집한 위치·경로·사진은 <strong>모두 사용자의 기기 안에만 저장되며 개발자의 서버로 전송되지 않습니다.</strong>
   개발자는 서버를 운영하지 않습니다. 다만 앱 개선을 위한 익명 이용 통계에는
-  <strong>운동 요약값(걸음 수·소요 시간·거리 구간)</strong>이 포함됩니다.<br>
+  <strong>운동 요약값(걸음 수·소요 시간·거리 구간)</strong>과
+  <strong>앱 진단값(배터리 소모율·GPS 정확도)</strong>이 포함됩니다.<br>
   <em>Summary: This app uses location to record your hikes, but all location, route, and photo
   data stays on your device and is never sent to the developer. We operate no server.
-  Anonymous usage statistics do include workout summary values (step count, duration, distance bucket).</em>
+  Anonymous usage statistics do include workout summary values (step count, duration, distance bucket)
+  and app diagnostics (battery usage, GPS accuracy).</em>
 </div>
 
 <h2>1. English Version</h2>
@@ -81,15 +83,14 @@
 <h3>Network Use</h3>
 <p>The App connects to the internet only for:</p>
 <ul>
-  <li>Map tiles (OpenStreetMap) while viewing the map online</li>
-  <li>Downloading optional offline map packs from GitHub, at your request</li>
+  <li>Downloading map data from GitHub, at your request — a nationwide base map (about 35&nbsp;MB) offered on first launch, and optional regional packs you choose later. The App does not stream map tiles from any online tile server; maps are rendered from the files stored on your device.</li>
   <li>Advertising and analytics (see below)</li>
 </ul>
 <p>Your location, routes, and records are <strong>not</strong> included in any of these requests.</p>
 
 <h3>Information Collected by Third-Party Services</h3>
 <ul>
-  <li><strong>Usage Analytics (Google Analytics for Firebase):</strong> Collects an app instance ID and usage events such as screen views, catalog searches, workout start/finish, and stamp acquisition. <strong>Coordinates, routes, and mountain names are never included in analytics events</strong> — only non-identifying values such as grade, counts, GPS accuracy, and workout summaries (<strong>step count, duration, distance bucket</strong>). These workout summaries are health and fitness data; they are declared as <strong>Health and fitness / Fitness info</strong> in the app's Google Play Data safety section. They are used solely to improve the App and are not sold or shared with third parties, nor used for ad targeting.</li>
+  <li><strong>Usage Analytics (Google Analytics for Firebase):</strong> Collects an app instance ID and usage events such as screen views, catalog searches, workout start/finish, and stamp acquisition. <strong>Coordinates, routes, and mountain names are never included in analytics events</strong> — only non-identifying values such as grade, counts, workout summaries (<strong>step count, duration, distance bucket</strong>), and app diagnostics (<strong>battery used during a workout, average GPS accuracy, number of recorded points, data-loading time</strong>). The workout summaries are health and fitness data, declared as <strong>Health and fitness / Fitness info</strong>; the diagnostics are declared as <strong>App info and performance / Diagnostics</strong> in the app's Google Play Data safety section. Diagnostics tell us whether long recordings are being killed by the system and how much battery a hike costs — they contain accuracy and battery <em>figures</em> only, never coordinates. All of it is used solely to improve the App and is not sold or shared with third parties, nor used for ad targeting.</li>
   <li><strong>Crash Reporting (Firebase Crashlytics):</strong> Collects crash stack traces and device model/OS version to diagnose failures, along with context such as whether a workout was running.</li>
   <li><strong>Advertising (Google AdMob):</strong> The App shows ads served by Google AdMob, which may use your device's advertising ID and approximate location (derived from your IP address) to serve and measure ads. <strong>The precise location collected by the App is not shared with the ad service.</strong></li>
 </ul>
@@ -157,15 +158,14 @@
 <h3>네트워크 사용</h3>
 <p>본 앱은 다음 경우에만 인터넷에 연결합니다.</p>
 <ul>
-  <li>온라인 상태에서 지도를 볼 때의 지도 타일(OpenStreetMap)</li>
-  <li>사용자가 요청한 경우에 한해 GitHub에서 오프라인 지도 팩 내려받기</li>
+  <li>사용자가 요청한 경우에 한해 GitHub에서 지도 데이터 내려받기 — 첫 실행에 안내되는 전국 기본 지도(약 35&nbsp;MB)와, 이후 직접 고르는 지역별 지도 팩입니다. 본 앱은 온라인 지도 타일 서버에서 지도를 실시간으로 받아오지 않으며, 기기에 저장된 파일로 지도를 그립니다.</li>
   <li>광고 및 이용 통계(아래 참조)</li>
 </ul>
 <p>이 요청들에는 <strong>사용자의 위치·경로·기록이 포함되지 않습니다.</strong></p>
 
 <h3>제3자 서비스를 통해 수집되는 정보</h3>
 <ul>
-  <li><strong>사용 통계 (Google Analytics for Firebase):</strong> 앱 인스턴스 ID와 화면 조회, 도감 검색, 운동 시작·종료, 도장 획득 등의 이용 이벤트가 수집됩니다. <strong>좌표·경로·산 이름은 통계 이벤트에 담지 않습니다</strong> — 등급, 개수, GPS 정확도, 그리고 <strong>운동 요약값(걸음 수·소요 시간·거리 구간)</strong>처럼 개인을 식별할 수 없는 값만 전송합니다. 이 운동 요약값은 건강·피트니스 정보에 해당하며, Google Play 데이터 보안 항목에 <strong>'건강 및 피트니스 → 피트니스 정보'</strong>로 신고되어 있습니다. 앱 개선 목적으로만 사용하고 제3자에게 판매·공유하거나 광고 타겟팅에 이용하지 않습니다.</li>
+  <li><strong>사용 통계 (Google Analytics for Firebase):</strong> 앱 인스턴스 ID와 화면 조회, 도감 검색, 운동 시작·종료, 도장 획득 등의 이용 이벤트가 수집됩니다. <strong>좌표·경로·산 이름은 통계 이벤트에 담지 않습니다</strong> — 등급, 개수, <strong>운동 요약값(걸음 수·소요 시간·거리 구간)</strong>, <strong>앱 진단값(운동 중 배터리 소모율·평균 GPS 정확도·기록된 좌표 개수·데이터 적재 시간)</strong>처럼 개인을 식별할 수 없는 값만 전송합니다. 운동 요약값은 건강·피트니스 정보에 해당하여 Google Play 데이터 보안 항목에 <strong>'건강 및 피트니스 → 피트니스 정보'</strong>로, 진단값은 <strong>'앱 정보 및 성능 → 진단'</strong>으로 신고되어 있습니다. 진단값은 긴 기록이 시스템에 의해 중단되지는 않는지, 등산 한 번에 배터리가 얼마나 드는지를 파악하기 위한 것으로, <strong>정확도와 배터리의 '수치'만 담기며 좌표는 담기지 않습니다.</strong> 모두 앱 개선 목적으로만 사용하고 제3자에게 판매·공유하거나 광고 타겟팅에 이용하지 않습니다.</li>
   <li><strong>오류 보고 (Firebase Crashlytics):</strong> 앱이 비정상 종료될 때 원인을 파악하기 위해 오류 스택 정보와 기기 모델·OS 버전, 그리고 운동 중이었는지 여부 등의 맥락 정보가 수집됩니다.</li>
   <li><strong>광고 (Google AdMob):</strong> 앱은 Google AdMob 광고를 표시하며, 광고 송출 및 성과 측정을 위해 기기의 광고 ID(ADID)와 대략적인 위치(IP 주소 기반)가 사용될 수 있습니다. <strong>앱이 수집한 정확한 위치는 광고 서비스에 제공되지 않습니다.</strong></li>
 </ul>
