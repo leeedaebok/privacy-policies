@@ -14,6 +14,7 @@
 | 매일 성경 통독 | com.bok.dailybible | https://leeedaebok.github.io/privacy-policies/dailybible/ |
 | 똥피하기 | com.bok.ddongdodge | https://leeedaebok.github.io/privacy-policies/ddongdodge/ |
 | EvidSnap | com.bok.evidsnap | https://leeedaebok.github.io/privacy-policies/evidsnap/ |
+| Global Size Guide | com.bok.globalsizeguide | https://leeedaebok.github.io/privacy-policies/globalsizeguide/ |
 | 사업공고 알리미 | com.bok.gonggoalimi | https://leeedaebok.github.io/privacy-policies/gonggoalimi/ |
 | 하늘 - 어제 오늘 날씨 비교 | com.bok.haneul | https://leeedaebok.github.io/privacy-policies/haneul/ |
 | 장날알리미 | com.bok.jangnalalimi | https://leeedaebok.github.io/privacy-policies/jangnalalimi/ |
@@ -33,6 +34,7 @@
 | EvidSnap | Google Docs (2026-05-14) |
 | 장날알리미 | Google Docs (2026-04-26) |
 | 한영심플성경 | Google Docs (2026-05-08) |
+| Global Size Guide | Google Docs (2026-05-06) — 옮기면서 **Google Analytics for Firebase 항목을 새로 채웠습니다.** 원문에는 AdMob만 적혀 있었는데 앱은 실제로 Analytics를 쓰고 있었습니다 |
 
 ## 새 앱 추가 방법
 
