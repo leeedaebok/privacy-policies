@@ -13,6 +13,7 @@
 | Bok 스토리지 매니저 | com.bok.storagemanager | https://leeedaebok.github.io/privacy-policies/bokstoragemanager/ |
 | 매일 성경 통독 | com.bok.dailybible | https://leeedaebok.github.io/privacy-policies/dailybible/ |
 | 똥피하기 | com.bok.ddongdodge | https://leeedaebok.github.io/privacy-policies/ddongdodge/ |
+| 동네복지 | com.bok.dongnebokji | https://leeedaebok.github.io/privacy-policies/dongnebokji/ |
 | EvidSnap | com.bok.evidsnap | https://leeedaebok.github.io/privacy-policies/evidsnap/ |
 | Global Size Guide | com.bok.globalsizeguide | https://leeedaebok.github.io/privacy-policies/globalsizeguide/ |
 | 사업공고 알리미 | com.bok.gonggoalimi | https://leeedaebok.github.io/privacy-policies/gonggoalimi/ |
