@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — SD Card Test</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 4rem;
+         font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .updated { color: #666; font-size: .9rem; margin-top: 0; }
+  ul { padding-left: 1.2rem; }
+  code { background: rgba(127,127,127,.15); padding: .1em .35em; border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy — SD Card Test</h1>
+<p class="updated">Last updated: 8 September 2026</p>
+
+<p>
+  SD Card Test (package <code>com.bok.sdcheck</code>) checks whether a memory card or USB drive
+  really holds the amount of storage it reports. This page explains what the app does with
+  information.
+</p>
+
+<h2>Information the app collects</h2>
+<p>
+  The app uses <strong>Google Analytics for Firebase</strong> and <strong>Firebase
+  Crashlytics</strong> to understand how it is used and to find crashes. There is no account and
+  no sign-in. What is sent is a short record of <em>what kind of test was run and how it came
+  out</em>.
+</p>
+<p>Specifically, the app sends:</p>
+<ul>
+  <li>How many storage volumes were found, and how many of them were removable.</li>
+  <li>Which test you started (quick or full), whether the volume was internal or removable, and
+      the size of the volume as a <strong>range</strong> rather than an exact figure
+      (for example "8_32", "128_512").</li>
+  <li>The verdict — genuine, false capacity, damaged, or did not finish — and roughly how long
+      the test took.</li>
+  <li>If you stopped a test, at which stage and roughly how far it had got.</li>
+  <li>Whether you saved or sent a report, and whether that succeeded.</li>
+  <li>If something went wrong, a fixed error code and a shortened error message with any file
+      path removed.</li>
+</ul>
+<p>The app <strong>does not</strong> send:</p>
+<ul>
+  <li>The path of the card or drive. That path contains an identifier for your card, so it is
+      deliberately left out.</li>
+  <li>The card's serial number, manufacturer or exact capacity.</li>
+  <li>The contents of any report you produce.</li>
+  <li>Anything at all about the files already on your card — the app never reads them.</li>
+</ul>
+<p>
+  Firebase itself adds some technical information to every record: an app instance identifier,
+  your <strong>device model</strong>, Android version, app version, session timing, and an
+  approximate region worked out from your IP address. Crashlytics adds a crash stack and device
+  details when the app crashes.
+</p>
+
+<h2>Permissions</h2>
+<p>
+  The app asks you for <strong>no permissions</strong>. Writing to a card uses the private folder
+  Android gives every app on each storage volume, which needs no storage permission, and saving a
+  report uses Android's own file picker.
+</p>
+<p>
+  Firebase adds a small number of background permissions that Android does not prompt you about:
+  internet access, network state, a wake lock, and an attribution permission used by analytics.
+  The advertising ID permission that Firebase would normally add has been
+  <strong>deliberately removed</strong>, because this app has no advertising.
+</p>
+
+<h2>What the app writes to your card</h2>
+<p>
+  To test a card the app has to write to it. It writes only inside its own folder, which Android
+  gives every app on each storage volume, and it deletes those files when the test finishes or is
+  interrupted. <strong>Your photos, videos and other files are never read, moved or deleted.</strong>
+</p>
+<p>
+  The app reads the reported capacity and free space of each volume so it knows how much to test.
+  That information is used while you are looking at it and is not stored or sent anywhere.
+</p>
+
+<h2>Reports you create</h2>
+<p>
+  The app can produce a plain text report of the result. Nothing happens to it unless you choose:
+</p>
+<ul>
+  <li><strong>Save as file</strong> asks Android to let you pick a location. The app writes the
+      file where you point it and has no other access to your storage.</li>
+  <li><strong>Send</strong> hands the text to whichever app you choose. What happens next is
+      governed by that app's own privacy policy, not this one.</li>
+</ul>
+<p>
+  The report contains <strong>no serial number and no account details</strong>. It identifies the
+  phone only by model name and Android version, because the report is meant to be handed to a
+  stranger such as a seller or a marketplace.
+</p>
+
+<h2>Children</h2>
+<p>The app is not directed at children and collects no information from anyone.</p>
+
+<h2>Your choices</h2>
+<p>
+  You can ask for the analytics records associated with your installation to be deleted by
+  emailing the address below. Uninstalling the app also stops all further collection.
+</p>
+
+<h2>Changes to this policy</h2>
+<p>
+  If a future version adds anything further that touches your information — advertising, for
+  example — this page will be updated before that version is published, and the date at the top
+  will change.
+</p>
+
+<h2>Contact</h2>
+<p>
+  Questions about this policy: <a href="mailto:leeedaebok@gmail.com">leeedaebok@gmail.com</a>
+</p>
+
+</body>
+</html>
