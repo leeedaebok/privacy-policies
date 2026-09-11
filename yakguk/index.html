@@ -23,7 +23,7 @@
 
 <h1>24시 약국 찾기<br>(Yakguk — Open Pharmacy Finder)<br>Privacy Policy / 개인정보처리방침</h1>
 
-<p><strong>Last updated: September 11, 2026</strong></p>
+<p><strong>Last updated: September 12, 2026</strong> (map view added)</p>
 
 <table class="id-table">
   <tr><th>App name (Google Play)</th><td>24시 약국 찾기 / Open Pharmacy Finder</td></tr>
@@ -36,10 +36,10 @@
 본 개인정보처리방침은 개발자 '복군'이 Google Play에 게시한 안드로이드 앱 '24시 약국 찾기'에 적용됩니다.</p>
 
 <div class="highlight">
-<strong>Your location never leaves your device.</strong> It is used only on your phone to sort pharmacies by distance,
-and it is not stored, not sent to any server, and not included in analytics. The App has no account or login.<br>
-<strong>현재 위치는 기기 밖으로 나가지 않습니다.</strong> 가까운 약국을 거리순으로 정렬하는 데에만 휴대폰 안에서 쓰며,
-저장하지 않고 서버나 분석 도구로 보내지 않습니다. 회원가입·로그인이 없습니다.
+<strong>We never store your location or send your coordinates to our servers or analytics.</strong> It is used on your phone to sort pharmacies by distance.
+If you open the map view, the map provider (NAVER Cloud) receives map-image requests for the area shown on screen. The App has no account or login.<br>
+<strong>현재 위치 좌표는 저장하지 않고, 우리 서버나 분석 도구로 보내지 않습니다.</strong> 가까운 약국을 거리순으로 정렬하는 데 휴대폰 안에서 씁니다.
+지도 화면을 여시면 지도 제공자(네이버 클라우드)가 화면에 보이는 지역의 지도 이미지 요청을 받습니다. 회원가입·로그인이 없습니다.
 </div>
 
 <h2>1. English Version</h2>
@@ -50,6 +50,9 @@ and it is not stored, not sent to any server, and not included in analytics. The
 <h3>Location</h3>
 <p>If you allow it, the App asks Android for your current location <strong>once</strong> when you open it or tap the location button. The coordinates are used only in the App's memory to compute the distance to nearby pharmacies. They are <strong>never written to storage, never sent to our servers (we have none), and never sent to analytics.</strong> Pharmacy data is downloaded for your whole province, so no location is sent even to request data. The App does not use background location.</p>
 <p>If you deny the permission, you can still use every feature by choosing a province and district from a list.</p>
+
+<h3>Map View (NAVER Map SDK)</h3>
+<p>The optional map view uses the NAVER Map SDK provided by NAVER Cloud Corporation. To draw the map, the SDK downloads map images for the area shown on screen from NAVER's servers; when the map is centered on your position, this reveals the approximate area you are viewing. The SDK may also send technical information needed to operate the service (for example, the app's package name for authentication, device model, OS version, network type, and IP address), handled under NAVER Cloud's privacy policy (<a href="https://privacy.navercloudcorp.com/ko/ncp/PrivacyPolicy/ncp-p">https://privacy.navercloudcorp.com/ko/ncp/PrivacyPolicy/ncp-p</a>). The App does not give your coordinates to the SDK as a location source — it only draws your position marker itself. If you do not open the map view, nothing is sent to NAVER.</p>
 
 <h3>Information Stored On Your Device Only</h3>
 <ul>
@@ -85,6 +88,7 @@ and it is not stored, not sent to any server, and not included in analytics. The
 <ul>
   <li><a href="https://firebase.google.com/support/privacy">Google Analytics for Firebase</a> — usage statistics</li>
   <li><a href="https://firebase.google.com/support/privacy">Firebase Crashlytics</a> — crash reporting</li>
+  <li><a href="https://privacy.navercloudcorp.com/ko/ncp/PrivacyPolicy/ncp-p">NAVER Map SDK (NAVER Cloud Corporation, Republic of Korea)</a> — map images (only when the map view is opened)</li>
 </ul>
 <p>We do not sell or share your information with any other third parties.</p>
 
@@ -94,6 +98,7 @@ and it is not stored, not sent to any server, and not included in analytics. The
   <tr><th>Location (approximate / precise)</th><td>Sort pharmacies by distance from you, on your device only. Optional.</td></tr>
   <tr><th>Internet</th><td>Download the pharmacy list</td></tr>
   <tr><th>Network state</th><td>Used by the networking and analytics libraries to check connectivity. When a download fails, the App shows saved data instead.</td></tr>
+  <tr><th>Wi-Fi state</th><td>Added by the NAVER Map SDK to check the network for loading map images</td></tr>
 </table>
 <p>The App requests <strong>no camera, contacts, storage, or phone-call permission</strong>, and no background location.</p>
 
@@ -124,6 +129,9 @@ and it is not stored, not sent to any server, and not included in analytics. The
 <h3>위치 정보</h3>
 <p>사용자가 허용하면, 앱을 열거나 위치 버튼을 누를 때 안드로이드에 현재 위치를 <strong>한 번</strong> 요청합니다. 이 좌표는 가까운 약국까지의 거리를 계산하는 데에만 앱 메모리 안에서 쓰이며, <strong>기기에 저장하지 않고, 서버로 보내지 않으며(서버가 없습니다), 분석 도구로도 보내지 않습니다.</strong> 약국 데이터는 시·도 단위로 통째로 받기 때문에 데이터를 요청할 때에도 위치가 전송되지 않습니다. 백그라운드 위치는 사용하지 않습니다.</p>
 <p>위치 권한을 거부하셔도 시·도와 시·군·구를 목록에서 골라 모든 기능을 쓰실 수 있습니다.</p>
+
+<h3>지도 화면 (네이버 지도 SDK)</h3>
+<p>선택 기능인 지도 화면은 네이버클라우드㈜의 네이버 지도 SDK를 사용합니다. 지도를 그리기 위해 SDK가 화면에 보이는 지역의 지도 이미지를 네이버 서버에서 내려받으며, 지도가 내 위치를 중심으로 보일 때에는 보고 있는 대략적인 지역이 드러납니다. 또한 서비스 운영에 필요한 기술 정보(인증을 위한 앱 패키지명, 기기 모델, OS 버전, 네트워크 종류, IP 주소 등)가 전송될 수 있으며, 이는 네이버 클라우드의 개인정보처리방침(<a href="https://privacy.navercloudcorp.com/ko/ncp/PrivacyPolicy/ncp-p">https://privacy.navercloudcorp.com/ko/ncp/PrivacyPolicy/ncp-p</a>)에 따라 처리됩니다. 앱은 현재 위치 좌표를 SDK의 위치 소스로 넘기지 않으며, 내 위치 표시는 앱이 직접 그립니다. 지도 화면을 열지 않으면 네이버로 아무것도 전송되지 않습니다.</p>
 
 <h3>기기 내부에만 저장되는 정보</h3>
 <ul>
@@ -159,6 +167,7 @@ and it is not stored, not sent to any server, and not included in analytics. The
 <ul>
   <li><a href="https://firebase.google.com/support/privacy">Google Analytics for Firebase</a> — 이용 통계 분석</li>
   <li><a href="https://firebase.google.com/support/privacy">Firebase Crashlytics</a> — 오류 보고</li>
+  <li><a href="https://privacy.navercloudcorp.com/ko/ncp/PrivacyPolicy/ncp-p">네이버 지도 SDK (네이버클라우드㈜, 대한민국)</a> — 지도 이미지(지도 화면을 열 때만)</li>
 </ul>
 <p>그 외 제3자에게 정보를 판매하거나 제공하지 않습니다.</p>
 
@@ -168,6 +177,7 @@ and it is not stored, not sent to any server, and not included in analytics. The
   <tr><th>위치(대략·정확)</th><td>가까운 약국 순으로 정렬 — 기기 안에서만 사용, 선택 사항</td></tr>
   <tr><th>인터넷</th><td>약국 목록 내려받기</td></tr>
   <tr><th>네트워크 상태</th><td>통신·분석 라이브러리가 연결 상태를 확인하는 데 사용. 받기에 실패하면 앱은 저장된 정보를 보여줍니다.</td></tr>
+  <tr><th>Wi-Fi 상태</th><td>네이버 지도 SDK가 지도 이미지를 받을 네트워크를 확인하는 데 사용(SDK가 추가)</td></tr>
 </table>
 <p>본 앱은 <strong>카메라·연락처·저장소·전화걸기 권한과 백그라운드 위치를 요구하지 않습니다.</strong></p>
 
@@ -193,7 +203,7 @@ and it is not stored, not sent to any server, and not included in analytics. The
 <h3>개인정보처리방침의 변경</h3>
 <p>본 방침이 변경되는 경우, 변경 사항을 본 문서에 반영하고 갱신일을 고지합니다.</p>
 
-<p class="date">시행일: 2026년 9월 11일</p>
+<p class="date">시행일: 2026년 9월 11일 · 개정: 2026년 9월 12일(지도 화면 추가)</p>
 
 </body>
 </html>
