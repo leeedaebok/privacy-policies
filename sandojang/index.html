@@ -23,10 +23,10 @@
 
 <h1>산도장<br>(Sandojang - 봉우리 등산 도감)<br>Privacy Policy / 개인정보처리방침</h1>
 
-<p><strong>Last updated: August 8, 2026</strong></p>
+<p><strong>Last updated: September 15, 2026</strong></p>
 
 <table class="id-table">
-  <tr><th>App name (Google Play)</th><td>산도장 - 봉우리 등산 도감 / Sandojang</td></tr>
+  <tr><th>App name (Google Play)</th><td>산도장 - 100대명산 등산지도 도감 / Sandojang</td></tr>
   <tr><th>Package name</th><td>com.bok.sandojang</td></tr>
   <tr><th>Developer / 개발자</th><td>복군 (Bokgun)</td></tr>
   <tr><th>Contact / 문의</th><td>leeedaebok@gmail.com</td></tr>
@@ -40,11 +40,14 @@
   수집한 위치·경로·사진은 <strong>모두 사용자의 기기 안에만 저장되며 개발자의 서버로 전송되지 않습니다.</strong>
   개발자는 서버를 운영하지 않습니다. 다만 앱 개선을 위한 익명 이용 통계에는
   <strong>운동 요약값(걸음 수·소요 시간·거리 구간)</strong>과
-  <strong>앱 진단값(배터리 소모율·GPS 정확도)</strong>이 포함됩니다.<br>
+  <strong>앱 진단값(배터리 소모율·GPS 정확도)</strong>이 포함됩니다.
+  또한 GPX 자동 저장이 켜져 있으면 봉우리 도장이 없는 기록의 파일 이름을 짓기 위해 출발 지점 좌표가
+  <strong>휴대폰의 주소 변환(지오코딩) 서비스</strong>에 전달될 수 있습니다(아래 "네트워크 사용" 참조).<br>
   <em>Summary: This app uses location to record your hikes, but all location, route, and photo
   data stays on your device and is never sent to the developer. We operate no server.
   Anonymous usage statistics do include workout summary values (step count, duration, distance bucket)
-  and app diagnostics (battery usage, GPS accuracy).</em>
+  and app diagnostics (battery usage, GPS accuracy). When GPX auto-save is on, the starting coordinate of a record
+  without a peak stamp may be passed to your phone's geocoding service to name the file (see "Network Use").</em>
 </div>
 
 <h2>1. English Version</h2>
@@ -60,7 +63,7 @@
   <li>Automatically verifying that you reached a summit (a stamp is granted when you enter the radius of a registered peak)</li>
   <li>Displaying your current National Point Number (국가지점번호) for emergency (119) reporting</li>
 </ul>
-<p>Location is collected <strong>only while a workout session is running</strong>, using a foreground service with a persistent notification. The App does <strong>not</strong> request background location permission (ACCESS_BACKGROUND_LOCATION) and does not track you when no session is active.</p>
+<p>While you are using the App, it checks your current location <strong>once</strong> when the home screen opens (to list nearby mountains) and when you tap the "my location" button on the conquest map. Your route is recorded <strong>only while a workout session is running</strong>, using a foreground service with a persistent notification. The App does <strong>not</strong> request background location permission (ACCESS_BACKGROUND_LOCATION) and does not track you when no session is active.</p>
 <p>The App also requests <strong>physical activity (ACTIVITY_RECOGNITION)</strong> permission to count steps during a session, and <strong>notification (POST_NOTIFICATIONS)</strong> permission to show the session notification and summit alerts. Both are optional; the App works without them, with reduced functionality.</p>
 
 <h3>Information Stored On Your Device Only</h3>
@@ -75,7 +78,8 @@
 </ul>
 
 <h3>Files Saved To Your Device Storage</h3>
-<p>When "GPX auto-save" is enabled (default: on), the App writes a GPX track file to <strong>Download/sandojang</strong> on your device after each workout, so that you can back up or move your records to other apps. These files are created on your device only and are not uploaded anywhere. You can turn this off at any time in the App's settings.</p>
+<p>When "GPX auto-save" is enabled (default: on), the App writes a GPX track file to <strong>Download/sandojang</strong> on your device after each workout, so that you can back up or move your records to other apps. These files are created on your device only and are not uploaded anywhere by the App. You can turn this off at any time in the App's settings.</p>
+<p><strong>Record backup:</strong> When you choose to export a backup (나 → 기록 백업), the App writes your workout records, routes (including coordinates), and stamps into one file at the location <strong>you pick</strong> in the Android file picker, or hands it to the app you pick for sharing. The App itself does not upload the file anywhere and is not connected to any cloud account. Photos are not included. Imported backups and GPX course files you open are read on your device only.</p>
 
 <h3>Photos</h3>
 <p>The App lets you attach photos to your records. Photos are chosen through the Android Photo Picker, which grants access <strong>only to the photos you select</strong> — the App does not request permission to read your entire photo library. Selected photos are resized and copied into the App's private storage, and are deleted when you delete them in the App or uninstall the App.</p>
@@ -85,8 +89,9 @@
 <ul>
   <li>Downloading map data from GitHub, at your request — a nationwide base map (about 35&nbsp;MB) offered on first launch, and optional regional packs you choose later. The App does not stream map tiles from any online tile server; maps are rendered from the files stored on your device.</li>
   <li>Advertising and analytics (see below)</li>
+  <li>Naming GPX files: when GPX auto-save is on and a finished record has no peak stamp, the App asks Android's built-in geocoder for the district name (e.g. "Jungnang-gu Sangbong-dong") of the record's starting point. The coordinate is handed to the geocoding service provided by your phone (usually Google Play services), which may look it up online. Names are cached on your device, and nothing is sent to the developer.</li>
 </ul>
-<p>Your location, routes, and records are <strong>not</strong> included in any of these requests.</p>
+<p>Apart from the geocoding lookup above, your location, routes, and records are <strong>not</strong> included in any of these requests.</p>
 
 <h3>Information Collected by Third-Party Services</h3>
 <ul>
@@ -135,7 +140,7 @@
   <li>정상 자동 인증 — 등록된 봉우리 반경 안에 들어오면 도장을 부여</li>
   <li>조난 시 119 신고에 쓰는 <strong>국가지점번호</strong> 실시간 표시</li>
 </ul>
-<p>위치는 <strong>사용자가 "운동 시작"을 누른 세션 동안에만</strong> 수집되며, 상단에 고정 알림이 표시되는 포그라운드 서비스로 동작합니다. 본 앱은 <strong>백그라운드 위치 권한(ACCESS_BACKGROUND_LOCATION)을 요청하지 않으며</strong>, 운동 중이 아닐 때는 위치를 추적하지 않습니다.</p>
+<p>앱을 사용하는 동안 홈 화면이 열릴 때(주변 산 목록)와 정복 지도에서 '내 위치' 버튼을 누를 때 현재 위치를 <strong>한 번</strong> 확인합니다. 경로는 <strong>사용자가 "운동 시작"을 누른 세션 동안에만</strong> 기록되며, 상단에 고정 알림이 표시되는 포그라운드 서비스로 동작합니다. 본 앱은 <strong>백그라운드 위치 권한(ACCESS_BACKGROUND_LOCATION)을 요청하지 않으며</strong>, 운동 중이 아닐 때는 위치를 추적하지 않습니다.</p>
 <p>이 밖에 세션 중 걸음 수를 세기 위한 <strong>신체 활동(ACTIVITY_RECOGNITION)</strong> 권한과, 운동 알림·도장 획득 알림을 위한 <strong>알림(POST_NOTIFICATIONS)</strong> 권한을 요청합니다. 두 권한은 선택 사항이며, 허용하지 않아도 해당 기능만 제한된 채 앱을 사용할 수 있습니다.</p>
 
 <h3>기기 내부에만 저장되는 정보</h3>
@@ -150,7 +155,8 @@
 </ul>
 
 <h3>기기 저장소에 만들어지는 파일</h3>
-<p>"GPX 자동 저장"이 켜져 있으면(기본값: 켜짐) 운동을 끝낼 때마다 기기의 <strong>다운로드/sandojang</strong> 폴더에 GPX 경로 파일이 저장됩니다. 이는 사용자가 자신의 기록을 백업하거나 다른 앱으로 옮길 수 있도록 하기 위한 것으로, <strong>기기 안에만 만들어지며 어디에도 업로드되지 않습니다.</strong> 앱의 '나' 화면에서 언제든지 끌 수 있습니다.</p>
+<p>"GPX 자동 저장"이 켜져 있으면(기본값: 켜짐) 운동을 끝낼 때마다 기기의 <strong>다운로드/sandojang</strong> 폴더에 GPX 경로 파일이 저장됩니다. 이는 사용자가 자신의 기록을 백업하거나 다른 앱으로 옮길 수 있도록 하기 위한 것으로, <strong>기기 안에만 만들어지며 앱이 어디에도 업로드하지 않습니다.</strong> 앱의 '나' 화면에서 언제든지 끌 수 있습니다.</p>
+<p><strong>기록 백업:</strong> 사용자가 백업 내보내기('나' → 기록 백업)를 누르면 운동 기록·경로(좌표 포함)·도장이 파일 하나로 만들어져, <strong>사용자가 안드로이드 파일 선택 화면에서 고른 곳</strong>에 저장되거나 사용자가 고른 앱으로 전달됩니다. 앱이 직접 파일을 업로드하지 않으며 어떤 클라우드 계정과도 연동되어 있지 않습니다. 사진은 백업에 담기지 않습니다. 가져오는 백업 파일과 사용자가 여는 GPX 코스 파일은 기기 안에서만 읽습니다.</p>
 
 <h3>사진</h3>
 <p>본 앱은 기록에 사진을 첨부할 수 있습니다. 사진은 Android 사진 선택 도구(Photo Picker)를 통해 고르며, 이 방식은 <strong>사용자가 선택한 사진에만</strong> 접근합니다 — 앱은 사진첩 전체를 읽는 권한을 요청하지 않습니다. 선택한 사진은 크기를 줄여 앱 전용 저장소에 복사되며, 앱에서 삭제하거나 앱을 제거하면 함께 삭제됩니다.</p>
@@ -160,8 +166,9 @@
 <ul>
   <li>사용자가 요청한 경우에 한해 GitHub에서 지도 데이터 내려받기 — 첫 실행에 안내되는 전국 기본 지도(약 35&nbsp;MB)와, 이후 직접 고르는 지역별 지도 팩입니다. 본 앱은 온라인 지도 타일 서버에서 지도를 실시간으로 받아오지 않으며, 기기에 저장된 파일로 지도를 그립니다.</li>
   <li>광고 및 이용 통계(아래 참조)</li>
+  <li>GPX 파일 이름 짓기: GPX 자동 저장이 켜져 있고 끝난 기록에 봉우리 도장이 없으면, 파일 이름에 넣을 동네 이름(예: "중랑구 상봉동")을 얻기 위해 기록의 출발 지점 좌표를 안드로이드 기본 주소 변환(Geocoder) 기능에 조회합니다. 이 좌표는 휴대폰이 제공하는 지오코딩 서비스(보통 Google Play 서비스)로 전달되어 온라인으로 조회될 수 있습니다. 얻은 이름은 기기에 저장되며, 개발자에게는 전송되지 않습니다.</li>
 </ul>
-<p>이 요청들에는 <strong>사용자의 위치·경로·기록이 포함되지 않습니다.</strong></p>
+<p>위 지오코딩 조회를 제외하면 이 요청들에는 <strong>사용자의 위치·경로·기록이 포함되지 않습니다.</strong></p>
 
 <h3>제3자 서비스를 통해 수집되는 정보</h3>
 <ul>
@@ -208,7 +215,7 @@
   <li><strong>내장 타일 서버:</strong> NanoHTTPD (BSD 3-Clause)</li>
 </ul>
 
-<p class="date">시행일: 2026년 8월 8일</p>
+<p class="date">시행일: 2026년 9월 15일</p>
 
 </body>
 </html>
