@@ -73,6 +73,8 @@
   <li><strong>INTERNET</strong> — to load ads and send anonymous statistics</li>
   <li><strong>ACCESS_NETWORK_STATE</strong> — to check whether a network connection is available before requesting an ad</li>
   <li><strong>com.google.android.gms.permission.AD_ID</strong> — to access the device advertising ID used by ads and analytics</li>
+  <li><strong>POST_NOTIFICATIONS</strong> — only if you turn on the optional daily reminder. It is off until you turn it on, and you can decline the permission; the app works the same either way.</li>
+  <li><strong>RECEIVE_BOOT_COMPLETED</strong> — to restore your reminder after the phone restarts. Without it, the reminder would silently stop.</li>
 </ul>
 <p>The Google advertising and Firebase libraries also add a few permissions that are granted automatically at install and never show a prompt (for example ACCESS_ADSERVICES_AD_ID / ATTRIBUTION / TOPICS for Android's Privacy Sandbox ad APIs, WAKE_LOCK, FOREGROUND_SERVICE and the Play install referrer). The App itself does not use them for anything else.</p>
 <p>The App does <strong>not</strong> request location, camera, microphone, contacts, storage, or notification permissions. The games themselves play fully offline; only ads and statistics need a connection.</p>
@@ -83,7 +85,7 @@
   <li><strong>Best score</strong> — one per game (four in total)</li>
   <li><strong>Streak</strong> — how many days in a row you have played, and the date you last played</li>
   <li><strong>Plays today</strong> — how many rounds you finished today</li>
-  <li><strong>Settings</strong> — whether sound and vibration are on or off</li>
+  <li><strong>Settings</strong> — whether sound, vibration and the daily reminder are on or off, and the reminder time you chose</li>
   <li><strong>First launch time</strong> — used only to decide when to show the Google Play review prompt, which appears once about three days after installation</li>
   <li><strong>Review prompt shown</strong> — so you are never asked twice</li>
   <li><strong>Advertising consent choice</strong>, where applicable — stored by Google's consent SDK</li>
@@ -100,6 +102,10 @@
   <li><strong>Remote settings (Firebase Remote Config):</strong> The App downloads a small settings file from Firebase (for example, whether to pause ads or show an update notice). This uses a Firebase installation ID and contains no personal information.</li>
   <li><strong>Google Play In-App Review:</strong> About three days after installation, the App asks Google Play to show its standard rating dialog, once, after you finish a round. The review is handled entirely by Google Play — the App is not told whether you rated it or what you wrote.</li>
 </ul>
+
+<h3>Daily Reminder</h3>
+<p>You can turn on one reminder a day. It is <strong>off by default</strong> and can be switched on or off from the gear icon on the home screen. You may choose 9 AM, 2 PM or 7 PM.</p>
+<p>Whether the reminder is on, and the time you picked, are stored <strong>on your device only</strong>, and the notification is <strong>generated on the device</strong> — it is not a server push, so nothing is transmitted for it. <strong>If you have already played that day, no reminder is shown.</strong></p>
 
 <h3>Consent (applicable regions)</h3>
 <p>For users in regions where relevant laws apply, such as the European Economic Area (EEA), the United Kingdom and Switzerland, the App requests consent through the Google User Messaging Platform (UMP) <strong>before any ad is loaded</strong>. If you decline, no personalized ads are requested.</p>
@@ -119,7 +125,7 @@
 <h3>Your Choices</h3>
 <ul>
   <li>Change your advertising consent: home screen → gear icon → Ad settings (applicable regions)</li>
-  <li>Turn sound and vibration off: home screen → gear icon</li>
+  <li>Turn sound, vibration or the daily reminder off: home screen → gear icon</li>
   <li>Reset or delete your advertising ID: Device Settings → Google → Ads</li>
   <li>Delete all records: uninstall the App</li>
 </ul>
@@ -142,6 +148,8 @@
   <li><strong>INTERNET</strong> — 광고를 불러오고 익명 통계를 전송하기 위해</li>
   <li><strong>ACCESS_NETWORK_STATE</strong> — 광고를 요청하기 전에 네트워크 연결 여부를 확인하기 위해</li>
   <li><strong>com.google.android.gms.permission.AD_ID</strong> — 광고·통계에 쓰이는 기기 광고 ID에 접근하기 위해</li>
+  <li><strong>POST_NOTIFICATIONS</strong> — <strong>매일 알림을 켜신 경우에만</strong> 사용합니다. 알림은 기본으로 꺼져 있고, 권한을 거부하셔도 앱은 그대로 동작합니다.</li>
+  <li><strong>RECEIVE_BOOT_COMPLETED</strong> — 휴대폰을 껐다 켠 뒤에도 알림이 이어지도록 하기 위해. 이 권한이 없으면 알림이 조용히 멈춥니다.</li>
 </ul>
 <p>이 밖에 Google 광고·Firebase 라이브러리가 설치 시 자동으로 허용되고 허락 창이 뜨지 않는 권한 몇 가지를 함께 넣습니다(예: 안드로이드 Privacy Sandbox 광고 API용 ACCESS_ADSERVICES_AD_ID·ATTRIBUTION·TOPICS, WAKE_LOCK, FOREGROUND_SERVICE, Play 설치 리퍼러). 앱이 이를 다른 용도로 쓰지 않습니다.</p>
 <p>위치·카메라·마이크·연락처·저장소·알림 권한은 <strong>요청하지 않습니다.</strong> 놀이 자체는 오프라인에서도 완전히 동작하며, 인터넷이 필요한 것은 광고와 통계뿐입니다.</p>
@@ -152,7 +160,7 @@
   <li><strong>최고 점수</strong> — 놀이마다 하나씩, 모두 네 개</li>
   <li><strong>연속 일수</strong> — 며칠째 이어서 하고 있는지와 마지막으로 한 날짜</li>
   <li><strong>오늘 한 판 수</strong></li>
-  <li><strong>설정</strong> — 소리·진동 켜짐/꺼짐</li>
+  <li><strong>설정</strong> — 소리·진동·매일 알림 켜짐/꺼짐과 고르신 알림 시각</li>
   <li><strong>첫 실행 시각</strong> — 설치 약 3일 뒤에 한 번 뜨는 Google Play 평가 창의 시점을 정하는 데만 사용됩니다</li>
   <li><strong>평가 창 표시 여부</strong> — 두 번 묻지 않기 위한 기록입니다</li>
   <li><strong>광고 동의 선택 내용</strong>(해당 지역) — Google 동의 SDK가 저장합니다</li>
@@ -169,6 +177,10 @@
   <li><strong>원격 설정 (Firebase Remote Config):</strong> 광고 일시 중지·업데이트 안내 여부 같은 작은 설정값을 Firebase에서 받아 옵니다. Firebase 설치 ID가 사용되며 개인정보는 포함되지 않습니다.</li>
   <li><strong>인앱 리뷰 (Google Play In-App Review):</strong> 설치 약 3일 뒤, 한 판을 끝낸 시점에 Google Play 기본 평가 창을 <strong>한 번</strong> 띄웁니다. 평가는 전적으로 Google Play가 처리하며, 앱은 이용자가 평가를 남겼는지도 무엇을 남겼는지도 알 수 없습니다.</li>
 </ul>
+
+<h3>매일 알림</h3>
+<p>하루에 한 번 놀이를 권하는 알림을 켤 수 있습니다. <strong>기본은 꺼져 있고</strong>, 첫 화면 오른쪽 위 톱니바퀴에서 켜고 끌 수 있습니다. 알림 시각은 오전 9시·오후 2시·오후 7시 중에서 고르실 수 있습니다.</p>
+<p>알림 여부와 시각은 <strong>휴대폰 안에만 저장</strong>되며, 알림은 <strong>기기 안에서 만들어집니다</strong> — 서버에서 보내는 푸시 알림이 아니므로 이를 위해 어떤 정보도 외부로 전송되지 않습니다. <strong>그날 이미 놀이를 하셨으면 알림이 오지 않습니다.</strong></p>
 
 <h3>동의 (해당 지역)</h3>
 <p>유럽 경제 지역(EEA), 영국, 스위스 등 관련 법령이 적용되는 지역의 사용자에게는 <strong>광고를 불러오기 전에</strong> Google User Messaging Platform(UMP)을 통해 동의를 요청합니다. 동의하지 않으면 맞춤형 광고를 요청하지 않습니다.</p>
@@ -188,7 +200,7 @@
 <h3>이용자의 권리</h3>
 <ul>
   <li>광고 동의 선택 변경: 첫 화면 → 톱니바퀴 → 광고 설정 변경 (해당 지역)</li>
-  <li>소리·진동 끄기: 첫 화면 → 톱니바퀴</li>
+  <li>소리·진동·매일 알림 끄기: 첫 화면 → 톱니바퀴</li>
   <li>광고 식별자 재설정·삭제: 기기 설정 → Google → 광고</li>
   <li>기록 전체 삭제: 앱 제거</li>
 </ul>
@@ -209,7 +221,7 @@
   <li><strong>그래픽:</strong> 앱 내 모든 그림은 코드로 그리거나 시스템 이모지를 사용합니다(외부 이미지 에셋 없음).</li>
 </ul>
 
-<p class="date">시행일: 2026년 9월 18일</p>
+<p class="date">시행일: 2026년 9월 18일 · 개정: 2026년 9월 18일 (매일 알림 기능과 그에 따른 권한 2종 반영)</p>
 
 </body>
 </html>
