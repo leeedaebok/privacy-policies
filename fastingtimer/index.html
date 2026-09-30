@@ -18,19 +18,19 @@
 <body>
 
 <h1>Privacy Policy — Fasting Timer</h1>
-<p class="updated">Last updated: 30 September 2026</p>
+<p class="updated">Last updated: 1 October 2026</p>
 
 <p>
   Fasting Timer (package <code>com.bok.fastingtimer</code>) is a timer and log for intermittent
   fasting. This page explains what the app does with information.
 </p>
 
-<h2>Your fasting history stays on your phone</h2>
+<h2>Your data stays on your phone</h2>
 <p>
-  The start and end time of every fast, your chosen plan and your statistics are stored
-  <strong>only on your device</strong>. There is no account, no sign-in and no server that
-  receives your history. The app does not ask for or store your weight, meals, age or any other
-  health measurement.
+  The start and end time of every fast, your chosen plan, your statistics, any notes you add to a
+  fast, the weights you log and the cups of water you count are stored <strong>only on your
+  device</strong>. There is no account, no sign-in and no server that receives any of it. None of
+  these values are included in the analytics described below.
 </p>
 <p>
   If Android's own backup is turned on for your device, Android may include the app's data in
@@ -49,17 +49,22 @@
       start time was set in the past, and whether the goal was reached.</li>
   <li>The length of a finished fast as a range rather than an exact figure
       (for example "16_18h").</li>
-  <li>That a fast was edited or deleted, that the plan was changed, and that history was exported
-      (with the number of fasts as a range and whether saving succeeded).</li>
-  <li>Whether the goal notification could be shown, and whether notification permission was
-      granted.</li>
+  <li>That a fast was edited or deleted, that the plan was changed, that a note was saved, and that
+      a backup was exported or imported (with the number of items as a range and whether it
+      succeeded).</li>
+  <li>That a weight was logged or deleted and which unit (kg or lb) is used — <strong>never the
+      weight itself</strong> — and that a cup of water was added or removed, with the day's count as
+      a range.</li>
+  <li>Which reminders you turned on or off, whether a reminder could be shown, and whether
+      notification permission was granted.</li>
   <li>If something went wrong, a fixed error code and a shortened error message with any file
       path removed.</li>
 </ul>
 <p>The app does not send:</p>
 <ul>
   <li>The date or time of any fast.</li>
-  <li>The contents of an exported file.</li>
+  <li>Your weight, or the text of any note.</li>
+  <li>The contents of an exported or imported file.</li>
   <li>Your name, email address, contacts or precise location.</li>
 </ul>
 <p>
@@ -90,11 +95,12 @@
 
 <h2>Permissions</h2>
 <ul>
-  <li><strong>Notifications</strong> — to tell you when you reach your fasting goal. On Android 13
-      and later the app asks the first time you start a fast. You can say no; the timer still
-      works.</li>
+  <li><strong>Notifications</strong> — for the reminders you choose in Settings: goal reached,
+      one hour before the goal, end of the eating window, and a daily reminder to start fasting.
+      On Android 13 and later the app asks the first time you start a fast or turn on a reminder.
+      You can say no; the timer still works.</li>
   <li><strong>Run at startup</strong> — after your phone restarts, Android clears scheduled alarms.
-      The app sets the goal reminder again for a fast that is still running.</li>
+      The app sets your reminders again.</li>
 </ul>
 <p>
   Firebase and the advertising SDK add a small number of background permissions that Android does
@@ -102,11 +108,12 @@
   by analytics, and the advertising ID permission used by AdMob.
 </p>
 
-<h2>Exporting your history</h2>
+<h2>Backup: exporting and importing</h2>
 <p>
-  <em>Export CSV</em> asks Android to let you pick where to save the file. The app writes the file
-  where you point it and has no other access to your storage. What happens to the file afterwards
-  is up to you.
+  <em>Export CSV</em> asks Android to let you pick where to save the file, and writes your fasts,
+  notes, weights and water counts there. <em>Import CSV</em> asks you to pick a file and reads only
+  that file. The app has no other access to your storage, and the file never passes through us.
+  What happens to an exported file afterwards is up to you.
 </p>
 
 <h2>Not medical advice</h2>
@@ -124,7 +131,7 @@
 
 <h2>Your choices</h2>
 <p>
-  You can delete any fast from the History tab, or remove all data by clearing the app's storage
+  You can delete any fast from the History tab and any weight from the Tracker tab, or remove all data by clearing the app's storage
   or uninstalling it. You can reset or delete your advertising ID under Device Settings → Google →
   Ads, and opt out of personalised ads in your device settings. You can ask for the analytics
   records associated with your installation to be deleted by emailing the address below.
@@ -142,15 +149,15 @@
 <hr>
 <h2 lang="ko">개인정보처리방침 (한국어 요약)</h2>
 <div lang="ko">
-<p>단식 타이머(<code>com.bok.fastingtimer</code>)는 단식 기록(시작·종료 시각, 플랜, 통계)을
-  <strong>기기 안에만</strong> 저장합니다. 계정·로그인·기록을 받는 서버가 없고, 체중·식사 등 건강
-  측정값을 받지 않습니다.</p>
+<p>단식 타이머(<code>com.bok.fastingtimer</code>)는 단식 기록(시작·종료 시각, 플랜, 통계, 메모)과
+  체중·물 기록을 <strong>기기 안에만</strong> 저장합니다. 계정·로그인·기록을 받는 서버가 없습니다.</p>
 <p>앱 개선을 위해 Firebase Analytics·Crashlytics 로 기능 사용 여부(플랜 이름, 목표 달성 여부, 단식
-  길이 구간 등)와 오류 정보를 보냅니다. 단식 날짜·시각과 내보낸 파일 내용은 보내지 않습니다.</p>
+  길이 구간, 체중을 기록했다는 사실과 단위, 켠 알림 종류 등)와 오류 정보를 보냅니다. 단식 날짜·시각,
+  체중 값, 메모 내용, 내보내거나 가져온 파일 내용은 보내지 않습니다.</p>
 <p>무료 앱이며 Google AdMob 광고(하단 배너, 가끔 전면 광고)가 표시됩니다. AdMob 은 광고 ID 와 IP 기반
   대략적 위치를 사용할 수 있습니다. 전면 광고는 단식을 끝내고 요약 창의 '완료'를 누른 뒤에만, 매번이
   아니라 가끔 표시됩니다.</p>
-<p>알림 권한은 목표 도달을 알리는 데만 씁니다. 이 앱은 의료기기가 아니며 질병을 진단·치료·예방하지
+<p>알림 권한은 설정에서 고른 알림(목표 도달·1시간 전·먹는 시간 종료·매일 시작)에만 씁니다. 이 앱은 의료기기가 아니며 질병을 진단·치료·예방하지
   않습니다. 문의: leeedaebok@gmail.com</p>
 </div>
 
