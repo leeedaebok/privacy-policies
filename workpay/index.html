@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침 — 알바 급여 계산기 (Work Hours &amp; Pay)</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 4rem;
+         font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Malgun Gothic", sans-serif; }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .updated { color: #666; font-size: .9rem; margin-top: 0; }
+  ul { padding-left: 1.2rem; }
+  code { background: rgba(127,127,127,.15); padding: .1em .35em; border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<h1>개인정보처리방침 — 알바 급여 계산기</h1>
+<p class="updated">시행일: 2026년 10월 2일 (v1.0)</p>
+
+<p>
+  알바 급여 계산기(패키지 <code>com.bok.workpay</code>, 영문명 Work Hours &amp; Pay)는 근무 시간을 기록하고
+  급여(주휴수당·야간·연장·휴일수당·공제 추정)를 계산하는 앱입니다. 이 문서는 앱이 정보를 어떻게 다루는지 설명합니다.
+</p>
+
+<h2>1. 근무 기록은 이 폰에만 저장됩니다</h2>
+<p>
+  근무지 이름, 시급과 근로조건, 계약 근무 시간, 출퇴근 시각, 휴게 시간, 추가 금액, 메모, 정산 결과는
+  <strong>기기 안에만</strong> 저장됩니다. 계정·로그인이 없고, 이 정보를 받는 서버가 없습니다.
+  아래 분석 정보에도 이 값들은 들어가지 않습니다.
+</p>
+<p>
+  기기의 안드로이드 백업이 켜져 있으면 안드로이드가 앱 데이터를 기기 백업에 포함할 수 있습니다.
+  이 백업은 안드로이드와 사용자의 Google 계정이 처리하며 저희가 받지 않습니다.
+</p>
+
+<h2>2. 앱이 보내는 정보</h2>
+<p>
+  앱 개선과 오류 수정을 위해 <strong>Google Analytics for Firebase</strong>와 <strong>Firebase Crashlytics</strong>를
+  사용합니다. 보내는 것은 <em>어떤 기능을 썼는지</em>에 대한 짧은 기록입니다.
+</p>
+<ul>
+  <li>출근·퇴근 버튼을 눌렀다는 사실, 근무를 저장·수정·삭제했다는 사실과 입력 방식(버튼·직접 입력·여러 날), 건수 구간</li>
+  <li>정산 화면을 열었다는 사실, 계산 규칙 종류(한국/일반), 고른 공제 방식, 최저시급 미달 경고가 떴는지 여부</li>
+  <li>근무지를 추가·수정·삭제했다는 사실</li>
+  <li>백업을 보내거나 불러왔다는 사실과 성공 여부, 정산 내역을 보냈다는 사실</li>
+  <li>알림 권한 허용 여부, 문제가 생겼을 때의 고정 오류 코드와 파일 경로를 지운 짧은 오류 문구</li>
+</ul>
+<p>다음은 <strong>보내지 않습니다</strong>.</p>
+<ul>
+  <li>시급, 급여 금액, 공제 금액 등 모든 금액</li>
+  <li>근무지 이름, 메모 내용, 출퇴근 날짜와 시각</li>
+  <li>보내거나 불러온 백업 파일의 내용</li>
+  <li>이름, 이메일, 연락처, 정확한 위치</li>
+</ul>
+<p>
+  Firebase 는 모든 기록에 앱 설치 식별자, 기기 모델, 안드로이드 버전, 앱 버전, 세션 시간, IP 로 추정한 대략적 지역을
+  덧붙입니다. Crashlytics 는 앱이 비정상 종료될 때 오류 위치와 기기 정보를 덧붙입니다.
+</p>
+
+<h2>3. 광고</h2>
+<p>
+  앱은 모든 기능이 무료이며 <strong>Google AdMob</strong> 광고로 운영됩니다. 달력·정산 화면 아래 배너, 그리고 가끔
+  전면 광고가 표시됩니다. AdMob 은 광고 제공·측정을 위해 기기의 <strong>광고 ID</strong>와 IP 로 추정한 대략적 위치를
+  사용할 수 있습니다.
+</p>
+<p>
+  전면 광고는 퇴근을 기록하고 요약 창의 '확인'을 누른 뒤에만, 매번이 아니라 가끔 표시됩니다. 출근할 때, 근무를
+  입력하는 중, 백업·정산 내역을 보낼 때는 표시되지 않습니다. 광고가 뜨지 않아도 모든 기능은 그대로 동작합니다.
+</p>
+<p>
+  유럽경제지역·영국에서는 광고 요청 전에 Google UMP 동의 화면이 표시되며, 설정 화면의 '광고 개인정보 설정'에서
+  언제든 다시 열 수 있습니다.
+</p>
+
+<h2>4. 권한</h2>
+<ul>
+  <li><strong>알림</strong> — 출근 중 상주 알림(경과 시간)에만 씁니다. 안드로이드 13 이상에서는 처음 출근할 때 한 번
+      묻습니다. 거부해도 기록·계산은 그대로 됩니다.</li>
+</ul>
+<p>
+  위치·연락처·저장공간 권한은 요청하지 않습니다. Firebase 와 광고 SDK 가 인터넷, 네트워크 상태, 절전 해제(wake lock),
+  분석용 기여(attribution) 권한, 광고 ID 권한을 추가합니다(사용자에게 묻지 않는 권한).
+</p>
+
+<h2>5. 백업 보내기·불러오기</h2>
+<p>
+  '메일·메신저로 보내기'는 백업 파일을 만들어 사용자가 고른 앱(메일·메신저 등)에 넘기고, '파일로 저장'은 사용자가 고른
+  위치에 파일을 씁니다. '백업 불러오기'는 사용자가 고른 파일 하나만 읽습니다. 이 파일은 저희를 거치지 않으며, 보낸 뒤의
+  처리는 사용자가 정합니다. 파일에는 근무 기록과 시급이 들어 있으니 공개된 곳에 올리지 마세요.
+</p>
+
+<h2>6. 계산 결과에 대하여</h2>
+<p>
+  계산은 근로기준법·기간제법·최저임금 고시를 바탕으로 한 <strong>참고용 추정치</strong>이며 법률·세무 자문이 아닙니다.
+  이 앱은 정부·공공기관을 대표하거나 그와 제휴하지 않습니다.
+</p>
+
+<h2>7. 아동</h2>
+<p>이 앱은 아동을 대상으로 하지 않으며, 위의 익명 사용 기록과 광고 식별자 외에 누구의 정보도 수집하지 않습니다.</p>
+
+<h2>8. 이용자의 선택</h2>
+<p>
+  앱에서 근무·근무지를 언제든 삭제할 수 있고, 앱 저장공간을 지우거나 앱을 삭제하면 모든 기록이 지워집니다.
+  광고 ID 는 기기 설정 → Google → 광고에서 재설정·삭제할 수 있습니다. 설치에 연결된 분석 기록 삭제는 아래 메일로 요청할 수 있습니다.
+</p>
+
+<h2>9. 방침 변경</h2>
+<p>정보를 다루는 방식이 바뀌는 버전을 내기 전에 이 페이지를 고치고 위의 날짜를 바꿉니다.</p>
+
+<h2>10. 문의</h2>
+<p>문의: <a href="mailto:leeedaebok@gmail.com">leeedaebok@gmail.com</a></p>
+
+<hr>
+<h2 lang="en">Privacy Policy — Work Hours &amp; Pay (English)</h2>
+<div lang="en">
+<p>Work Hours &amp; Pay (<code>com.bok.workpay</code>) records your shifts and estimates your pay. Your jobs, hourly rates,
+  contract hours, shift times, breaks, extra pay, notes and pay results are stored <strong>only on your device</strong>.
+  There is no account, no sign-in and no server that receives them.</p>
+<p>To improve the app we use Google Analytics for Firebase and Firebase Crashlytics to record which features are used
+  (that a shift was saved and how, that the pay screen was opened, the rule set and deduction type, whether a backup was
+  sent or loaded) and error codes. We never send any amounts, job names, notes, shift dates or times, or the contents of
+  backup files.</p>
+<p>The app is free and shows Google AdMob ads (a banner on the Calendar and Pay screens and, occasionally, a full-screen ad
+  after you clock out and close the summary). AdMob may use your advertising ID and an approximate location from your IP.
+  In the EEA and UK a consent form is shown first and can be reopened from Settings.</p>
+<p>The notification permission is used only for the ongoing "working" notification. Backups you send or save go only where
+  you choose; they never pass through us. Pay results are estimates, not legal or tax advice. This app is not affiliated with
+  any government agency. Contact: <a href="mailto:leeedaebok@gmail.com">leeedaebok@gmail.com</a></p>
+</div>
+
+</body>
+</html>
