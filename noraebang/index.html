@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침 — 노래방 번호 검색</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 4rem;
+         font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Malgun Gothic", sans-serif; }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .updated { color: #666; font-size: .9rem; margin-top: 0; }
+  ul { padding-left: 1.2rem; }
+  code { background: rgba(127,127,127,.15); padding: .1em .35em; border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<h1>개인정보처리방침 — 노래방 번호 검색</h1>
+<p class="updated">시행일: 2026년 10월 10일 (v1.0)</p>
+
+<p>
+  노래방 번호 검색(패키지 <code>com.bok.noraebang</code>)은 노래방 기계의 곡번호를 찾고 애창곡을 모아 두는 앱입니다.
+  이 문서는 앱이 정보를 어떻게 다루는지 설명합니다. 이 앱은 TJ미디어·금영엔터테인먼트와 관계없는 개인 개발 앱입니다.
+</p>
+
+<h2>1. 애창곡은 이 폰에만 저장됩니다</h2>
+<p>
+  담아 둔 애창곡(곡 제목·가수·곡번호·메모), 최근 검색어, '내 노래방 기계' 선택은 <strong>기기 안에만</strong> 저장됩니다.
+  계정·로그인이 없고, 이 정보를 받는 저희 서버가 없습니다. 아래 분석 정보에도 이 값들은 들어가지 않습니다.
+</p>
+<p>
+  기기의 안드로이드 백업이 켜져 있으면 안드로이드가 애창곡과 화면 설정을 기기 백업에 포함할 수 있습니다.
+  이 백업은 안드로이드와 사용자의 Google 계정이 처리하며 저희가 받지 않습니다.
+</p>
+
+<h2>2. 검색어는 TJ미디어·금영 사이트로 직접 전송됩니다</h2>
+<p>
+  곡을 검색하면 앱이 입력한 검색어를 <strong>사용자의 기기에서 곧바로</strong> 아래 사이트에 보내 결과를 받아 옵니다.
+  저희 서버를 거치지 않으며 저희는 검색어를 받거나 저장하지 않습니다.
+</p>
+<ul>
+  <li>TJ미디어 반주곡 검색 — <a href="https://www.tjmedia.com/song/accompaniment">https://www.tjmedia.com/song/accompaniment</a></li>
+  <li>금영 노래 검색 — <a href="https://kysing.kr/search/">https://kysing.kr/search/</a></li>
+  <li>공개 노래방 API — <a href="https://api.manana.kr/karaoke">https://api.manana.kr/karaoke</a>
+      (인기곡·신곡 목록을 받을 때, 그리고 위 두 사이트의 조회가 실패했을 때의 대체 검색에 사용)</li>
+</ul>
+<p>
+  웹사이트에 접속할 때와 마찬가지로, 이 사이트들은 요청과 함께 사용자의 IP 주소와 검색어를 받게 되며 각 사이트의
+  방침에 따라 처리합니다. 앱은 이 요청에 광고 ID·기기 식별자·계정 정보를 붙이지 않습니다.
+</p>
+
+<h2>3. 앱이 보내는 분석 정보</h2>
+<p>
+  앱 개선과 오류 수정을 위해 <strong>Google Analytics for Firebase</strong>와 <strong>Firebase Crashlytics</strong>를
+  사용합니다. 보내는 것은 <em>어떤 기능을 썼는지</em>에 대한 짧은 기록입니다.
+</p>
+<ul>
+  <li>검색을 했다는 사실, 찾는 방식(통합·제목·가수), 결과 건수 구간, 각 사이트 조회의 성공 여부</li>
+  <li>애창곡을 담거나 뺐다는 사실, 메모를 저장했다는 사실, 애창곡 수 구간</li>
+  <li>인기곡·신곡 목록을 열었다는 사실, 고른 기계 종류(TJ·금영)</li>
+  <li>애창곡을 내보내거나 가져왔다는 사실과 성공 여부</li>
+  <li>문제가 생겼을 때의 고정 오류 코드와, 주소·경로를 지운 짧은 오류 문구</li>
+</ul>
+<p>다음은 <strong>보내지 않습니다</strong>.</p>
+<ul>
+  <li>검색어</li>
+  <li>곡 제목, 가수, 곡번호, 메모 내용</li>
+  <li>내보내거나 가져온 파일의 내용</li>
+  <li>이름, 이메일, 연락처, 정확한 위치</li>
+</ul>
+<p>
+  Firebase 는 모든 기록에 앱 설치 식별자, 기기 모델, 안드로이드 버전, 앱 버전, 세션 시간, IP 로 추정한 대략적 지역을
+  덧붙입니다. Crashlytics 는 앱이 비정상 종료될 때 오류 위치와 기기 정보를 덧붙입니다.
+</p>
+
+<h2>4. 광고</h2>
+<p>
+  앱은 모든 기능이 무료이며 <strong>Google AdMob</strong> 광고로 운영됩니다. 화면 아래 배너, 그리고 가끔 전면 광고가
+  표시됩니다. AdMob 은 광고 제공·측정을 위해 기기의 <strong>광고 ID</strong>와 IP 로 추정한 대략적 위치를 사용할 수 있습니다.
+</p>
+<p>
+  전면 광고는 '인기·신곡' 탭으로 넘어갈 때에만, 매번이 아니라 가끔 표시됩니다. 검색 결과가 나올 때, 애창곡을 볼 때,
+  곡을 담을 때는 표시되지 않습니다. 광고가 뜨지 않아도 모든 기능은 그대로 동작합니다.
+</p>
+<p>
+  유럽경제지역·영국에서는 광고 요청 전에 Google UMP 동의 화면이 표시되며, 설정 화면의 '광고 개인정보 설정'에서
+  언제든 다시 열 수 있습니다.
+</p>
+
+<h2>5. 권한</h2>
+<p>
+  사용자에게 묻는 권한은 없습니다. 위치·연락처·마이크·저장공간 권한을 요청하지 않습니다. 앱과 Firebase·광고 SDK 가
+  인터넷, 네트워크 상태, 절전 해제(wake lock), 분석용 기여(attribution) 권한, 광고 ID 권한을 사용합니다
+  (사용자에게 묻지 않는 권한).
+</p>
+
+<h2>6. 애창곡 내보내기·가져오기</h2>
+<p>
+  '파일로 내보내기'는 사용자가 고른 위치에 애창곡 파일을 쓰고, '파일에서 가져오기'는 사용자가 고른 파일 하나만 읽습니다.
+  이 파일은 저희를 거치지 않습니다.
+</p>
+
+<h2>7. 곡번호에 대하여</h2>
+<p>
+  곡번호와 곡 정보의 권리는 각 제공처(TJ미디어, 금영엔터테인먼트)에 있습니다. 곡번호는 기계 기종과 업데이트 시기에 따라
+  실제 노래방과 다를 수 있습니다.
+</p>
+
+<h2>8. 아동</h2>
+<p>이 앱은 아동을 대상으로 하지 않으며, 위의 익명 사용 기록과 광고 식별자 외에 누구의 정보도 수집하지 않습니다.</p>
+
+<h2>9. 이용자의 선택</h2>
+<p>
+  앱에서 애창곡과 최근 검색어를 언제든 지울 수 있고, 앱 저장공간을 지우거나 앱을 삭제하면 모든 기록이 지워집니다.
+  광고 ID 는 기기 설정 → Google → 광고에서 재설정·삭제할 수 있습니다. 설치에 연결된 분석 기록 삭제는 아래 메일로 요청할 수 있습니다.
+</p>
+
+<h2>10. 방침 변경</h2>
+<p>정보를 다루는 방식이 바뀌는 버전을 내기 전에 이 페이지를 고치고 위의 날짜를 바꿉니다.</p>
+
+<h2>11. 문의</h2>
+<p>문의: <a href="mailto:leeedaebok@gmail.com">leeedaebok@gmail.com</a></p>
+
+<hr>
+<h2 lang="en">Privacy Policy — Karaoke Number Search (English)</h2>
+<div lang="en">
+<p>Karaoke Number Search (<code>com.bok.noraebang</code>) looks up Korean karaoke machine song numbers and keeps your
+  favorites. Your favorites (title, artist, number, note), recent searches and machine choice are stored
+  <strong>only on your device</strong>. There is no account, no sign-in and no server of ours that receives them.</p>
+<p>When you search, the app sends your query <strong>directly from your device</strong> to the official search pages of
+  TJ Media (tjmedia.com) and Kumyoung (kysing.kr), and to a public karaoke API (api.manana.kr) for charts and as a fallback.
+  Those sites receive your IP address and the query, as with any website visit. We do not receive or store your queries.</p>
+<p>To improve the app we use Google Analytics for Firebase and Firebase Crashlytics to record which features are used
+  (that a search was made and how, result-count ranges, that a favorite was added or removed) and error codes. We never send
+  search terms, song titles, artists, numbers, notes or file contents.</p>
+<p>The app is free and shows Google AdMob ads (a bottom banner and, occasionally, a full-screen ad when you switch to the
+  Charts tab). AdMob may use your advertising ID and an approximate location from your IP. In the EEA and UK a consent form
+  is shown first and can be reopened from Settings. This app is an independent project and is not affiliated with TJ Media
+  or Kumyoung Entertainment. Contact: <a href="mailto:leeedaebok@gmail.com">leeedaebok@gmail.com</a></p>
+</div>
+
+</body>
+</html>
