@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침 — 엑셀 편집기 (XLSX Editor)</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 4rem;
+         font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Malgun Gothic", sans-serif; }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .updated { color: #666; font-size: .9rem; margin-top: 0; }
+  ul { padding-left: 1.2rem; }
+  code { background: rgba(127,127,127,.15); padding: .1em .35em; border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<p><a href="#en">English</a></p>
+
+<h1>개인정보처리방침 — 엑셀 편집기</h1>
+<p class="updated">시행일: 2026년 10월 19일 (v1.0)</p>
+
+<p>
+  엑셀 편집기(영문 이름 XLSX Editor, 패키지 <code>com.bok.excel</code>)는 스프레드시트 파일(xlsx·xlsm·xls)을 열고 고쳐 저장하는 앱입니다.
+  이 문서는 앱이 정보를 어떻게 다루는지 설명합니다. 이 앱은 Microsoft 와 관계없는 독립 앱이며, Excel 은 Microsoft 의 상표입니다.
+</p>
+
+<h2>1. 파일은 이 폰 안에서만 다룹니다</h2>
+<p>
+  앱이 여는 파일과 그 내용(칸의 값·수식·시트 이름·파일 이름)은 <strong>기기 안에서만</strong> 읽고 고치고 저장합니다.
+  계정·로그인이 없고, 파일이나 그 내용을 받는 저희 서버가 없습니다. 아래 분석 정보에도 파일 이름과 내용은 들어가지 않습니다.
+</p>
+<p>
+  앱은 사용자가 시스템 파일 선택 창에서 고른 파일, 또는 다른 앱이 '다른 앱으로 열기'·'공유'로 넘겨준 파일만 읽습니다.
+  저장공간 전체를 읽는 권한을 요청하지 않습니다.
+</p>
+
+<h2>2. 최근 파일과 앱 안 보관</h2>
+<ul>
+  <li><strong>최근 파일 목록</strong>: 파일 이름, 파일 주소, 연 시각을 기기 안에 저장합니다.</li>
+  <li><strong>받은 파일의 사본</strong>: 다른 앱(메신저·메일 등)에서 넘겨받은 파일은 나중에 다시 열 수 있도록 받은 그대로의 사본을
+      앱 전용 저장공간에 보관합니다.</li>
+  <li><strong>덮어쓰기 전 원본</strong>: 원본 파일에 덮어써 저장할 때 덮어쓰기 직전의 파일 하나를 앱 전용 저장공간에 보관해
+      '덮어쓰기 전으로 되돌리기'에 씁니다.</li>
+</ul>
+<p>
+  보관은 최근 20개·합계 100MB까지이며, 넘으면 오래된 것부터 지웁니다. 최근 목록에서 '목록에서 빼기'를 누르면 그 파일의 보관본도 함께 지웁니다.
+  이 보관본은 다른 앱이 읽을 수 없는 앱 전용 공간에 있고, 안드로이드 백업 대상에서도 제외되어 기기 밖으로 나가지 않습니다.
+</p>
+
+<h2>3. 앱이 보내는 분석 정보</h2>
+<p>
+  앱 개선과 오류 수정을 위해 <strong>Google Analytics for Firebase</strong>와 <strong>Firebase Crashlytics</strong>를
+  사용합니다. 보내는 것은 <em>어떤 기능을 썼는지</em>에 대한 짧은 기록입니다.
+</p>
+<ul>
+  <li>파일을 열었다는 사실, 연 경로(파일 선택·다른 앱·최근 목록·새 문서), 성공 여부와 실패 종류, 시트 수, 파일 크기 구간</li>
+  <li>저장했다는 사실, 저장 방식(덮어쓰기·다른 이름·공유), 고친 칸 수</li>
+  <li>쓴 기능의 종류(예: 정렬, 필터, 행 넣기, PDF 내보내기, 확대)와 성공 여부</li>
+  <li>문제가 생겼을 때의 고정 오류 코드와, 파일 주소·이름을 지운 짧은 오류 문구</li>
+</ul>
+<p>다음은 <strong>보내지 않습니다</strong>.</p>
+<ul>
+  <li>파일 이름, 시트 이름, 칸의 값과 수식 등 파일 내용</li>
+  <li>찾기·바꾸기에 입력한 글자</li>
+  <li>이름, 이메일, 연락처, 정확한 위치</li>
+</ul>
+<p>
+  Firebase 는 모든 기록에 앱 설치 식별자, 기기 모델, 안드로이드 버전, 앱 버전, 세션 시간, IP 로 추정한 대략적 지역을
+  덧붙입니다. Crashlytics 는 앱이 비정상 종료될 때 오류 위치와 기기 정보를 덧붙입니다.
+</p>
+
+<h2>4. 광고</h2>
+<p>
+  앱은 모든 기능이 무료이며 <strong>Google AdMob</strong> 광고로 운영됩니다. AdMob 은 광고 제공·측정을 위해 기기의
+  <strong>광고 ID</strong>와 IP 로 추정한 대략적 위치를 사용할 수 있습니다.
+</p>
+<ul>
+  <li>배너: 첫 화면과 편집 화면 아래</li>
+  <li>전면 광고: 저장이나 PDF 내보내기가 끝난 뒤, 매번이 아니라 가끔. 파일을 열 때·편집하는 중·파일을 닫을 때는 표시하지 않습니다.</li>
+  <li>보상형 광고: 사용자가 '광고 보고 24시간 광고 없이'를 고를 때만. 끝까지 보면 24시간 동안 배너와 전면 광고가 나오지 않습니다.</li>
+</ul>
+<p>광고가 뜨지 않아도 모든 기능은 그대로 동작합니다.</p>
+<p>
+  유럽경제지역·영국 등 동의가 필요한 지역에서는 광고 요청 전에 Google UMP 동의 화면이 표시되며, 첫 화면의
+  '광고 개인정보 설정'에서 언제든 다시 열 수 있습니다.
+</p>
+
+<h2>5. 권한</h2>
+<p>
+  사용자에게 묻는 권한은 없습니다. 위치·연락처·카메라·마이크·저장공간 권한을 요청하지 않습니다. 앱과 Firebase·광고 SDK 가
+  인터넷, 네트워크 상태, 절전 해제(wake lock), 분석용 기여(attribution) 권한, 광고 ID 권한을 사용합니다(사용자에게 묻지 않는 권한).
+</p>
+
+<h2>6. 공유와 PDF</h2>
+<p>
+  '고친 파일 공유하기'는 고친 파일을 앱 캐시에 만든 뒤 사용자가 고른 앱으로 넘깁니다. 'PDF로 내보내기'는 사용자가 고른 위치에 PDF 를 씁니다.
+  이 파일들은 저희를 거치지 않습니다.
+</p>
+
+<h2>7. 아동</h2>
+<p>이 앱은 아동을 대상으로 하지 않으며, 위의 익명 사용 기록과 광고 식별자 외에 누구의 정보도 수집하지 않습니다.</p>
+
+<h2>8. 이용자의 선택</h2>
+<p>
+  최근 목록에서 항목을 빼면 그 보관본이 지워지고, 앱 저장공간을 지우거나 앱을 삭제하면 최근 목록과 모든 보관본이 지워집니다.
+  광고 ID 는 기기 설정 → Google → 광고에서 재설정·삭제할 수 있습니다. 설치에 연결된 분석 기록 삭제는 아래 메일로 요청할 수 있습니다.
+</p>
+
+<h2>9. 방침 변경</h2>
+<p>정보를 다루는 방식이 바뀌는 버전을 내기 전에 이 페이지를 고치고 위의 날짜를 바꿉니다.</p>
+
+<h2>10. 문의</h2>
+<p>문의: <a href="mailto:leeedaebok@gmail.com">leeedaebok@gmail.com</a></p>
+
+<hr>
+<div lang="en" id="en">
+<h1>Privacy Policy — XLSX Editor</h1>
+<p class="updated">Effective: October 19, 2026 (v1.0)</p>
+
+<p>XLSX Editor (Korean name 엑셀 편집기, package <code>com.bok.excel</code>) opens, edits and saves spreadsheet files
+  (xlsx, xlsm, xls). This app is independent and not affiliated with Microsoft. Excel is a trademark of Microsoft.</p>
+
+<h2>1. Your files stay on your device</h2>
+<p>Files you open and their contents (cell values, formulas, sheet names, file names) are read, edited and saved
+  <strong>only on your device</strong>. There is no account, no sign-in and no server of ours that receives your files.
+  The app reads only the files you pick in the system file picker or that another app hands to it through Open with or Share.
+  It does not request access to your whole storage.</p>
+
+<h2>2. Recent files and copies kept in the app</h2>
+<ul>
+  <li><strong>Recent files list</strong>: file name, file address and the time it was opened, stored on the device.</li>
+  <li><strong>Copies of received files</strong>: files handed over by other apps (messengers, email) are kept as an unchanged copy in
+      the app's private storage so they can be reopened later.</li>
+  <li><strong>Version before overwrite</strong>: when you save over an original file, the file as it was just before the overwrite
+      is kept in the app's private storage for "Restore version before overwrite".</li>
+</ul>
+<p>Up to 20 recent files and 100 MB in total are kept; the oldest are deleted first. Removing a file from the recent list
+  also deletes its kept copies. These copies are in storage other apps cannot read and are excluded from Android backup,
+  so they never leave the device.</p>
+
+<h2>3. Analytics</h2>
+<p>To improve the app and fix errors we use Google Analytics for Firebase and Firebase Crashlytics to record which features
+  are used: that a file was opened and how (file picker, another app, recent list, new document), success or failure type,
+  sheet count and a file-size range; that a file was saved and how, and the number of edited cells; which features were used
+  (for example sort, filter, insert rows, PDF export, zoom); and fixed error codes with file addresses and names removed.</p>
+<p>We <strong>never send</strong> file names, sheet names, cell values, formulas or any other file content, text typed into
+  Find and Replace, or your name, email, contacts or precise location. Firebase adds an app-instance ID, device model,
+  Android version, app version, session time and an approximate region derived from IP; Crashlytics adds crash location and
+  device details when the app crashes.</p>
+
+<h2>4. Ads</h2>
+<p>Every feature is free and the app shows Google AdMob ads. AdMob may use your advertising ID and an approximate location
+  derived from your IP to serve and measure ads.</p>
+<ul>
+  <li>Banner: at the bottom of the home and editor screens.</li>
+  <li>Full-screen ad: occasionally after saving or exporting a PDF. Never while opening a file, while editing, or when closing a file.</li>
+  <li>Rewarded ad: only when you choose "Watch one ad to go ad-free for 24 hours". Watching it to the end turns off banner and
+      full-screen ads for 24 hours.</li>
+</ul>
+<p>All features work the same whether or not an ad is shown. Where consent is required (such as the EEA and UK) a Google UMP
+  consent form is shown before ads are requested and can be reopened from "Ad privacy settings" on the home screen.</p>
+
+<h2>5. Permissions</h2>
+<p>The app asks you for no permissions. It does not request location, contacts, camera, microphone or storage permission.
+  The app and the Firebase and ad SDKs use internet, network state, wake lock, attribution and advertising ID permissions
+  (permissions that are not requested from you).</p>
+
+<h2>6. Sharing and PDF</h2>
+<p>"Share edited file" creates the file in the app's cache and hands it to the app you choose. "Export to PDF" writes a PDF
+  to the location you choose. These files never pass through us.</p>
+
+<h2>7. Children</h2>
+<p>This app is not directed at children and collects no information from anyone beyond the anonymous usage records and
+  advertising identifier described above.</p>
+
+<h2>8. Your choices</h2>
+<p>Removing an item from the recent list deletes its kept copies; clearing the app's storage or uninstalling the app deletes
+  the recent list and all kept copies. You can reset or delete your advertising ID in device Settings → Google → Ads.
+  To request deletion of analytics data linked to your installation, email us.</p>
+
+<h2>9. Changes</h2>
+<p>Before releasing a version that changes how information is handled, we update this page and the date above.</p>
+
+<h2>10. Contact</h2>
+<p><a href="mailto:leeedaebok@gmail.com">leeedaebok@gmail.com</a></p>
+</div>
+
+</body>
+</html>
