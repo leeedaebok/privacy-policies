@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침 — 아침인사 카드 만들기 (Morning Greeting Cards)</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 4rem;
+         font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Malgun Gothic", sans-serif; }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .updated { color: #666; font-size: .9rem; margin-top: 0; }
+  ul { padding-left: 1.2rem; }
+  code { background: rgba(127,127,127,.15); padding: .1em .35em; border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<p><a href="#en">English</a></p>
+
+<h1>개인정보처리방침 — 아침인사 카드 만들기</h1>
+<p class="updated">시행일: 2026년 10월 24일 (v1.0)</p>
+
+<p>
+  아침인사 카드 만들기(패키지 <code>com.bok.greeting</code>)는 배경 그림을 고르고 인사 문구를 얹어 이미지 카드를 만들고
+  저장·공유하는 앱입니다. 이 문서는 앱이 정보를 어떻게 다루는지 설명합니다.
+</p>
+
+<h2>1. 만든 카드와 입력한 글은 이 폰 안에서만 다룹니다</h2>
+<p>
+  직접 쓴 문구, 카드에 넣은 받는 사람 이름, 만든 카드 이미지는 <strong>기기 안에서만</strong> 만들고 저장합니다.
+  계정·로그인이 없고, 카드나 문구를 받는 저희 서버가 없습니다. 아래 분석 정보에도 문구와 이름은 들어가지 않습니다.
+</p>
+<p>
+  카드를 '저장'하면 기기의 사진(갤러리)에 이미지 파일로 저장되고, '공유'하면 사용자가 고른 앱(카카오톡 등)으로 이미지가 넘어갑니다.
+  이 이미지는 저희를 거치지 않습니다. 앱 설정(글자 크기, 알림 시각 등)은 기기 안에만 저장됩니다.
+</p>
+
+<h2>2. 배경 그림</h2>
+<p>
+  앱에 들어 있는 배경 그림은 인공지능(AI)으로 생성한 이미지이며 앱 설치 파일 안에 포함되어 있습니다.
+  배경을 고르거나 카드를 만들 때 그림을 내려받지 않으며, 어떤 그림을 골랐는지도 외부로 보내지 않습니다(아래 분류 기록 제외).
+</p>
+
+<h2>3. 앱이 보내는 분석 정보</h2>
+<p>
+  앱 개선과 오류 수정을 위해 <strong>Google Analytics for Firebase</strong>와 <strong>Firebase Crashlytics</strong>를
+  사용합니다. 보내는 것은 <em>어떤 기능을 썼는지</em>에 대한 짧은 기록입니다.
+</p>
+<ul>
+  <li>첫 화면을 열었다는 사실, 고른 배경의 분류(예: 요일, 계절, 명절, 꽃)</li>
+  <li>추천 문구를 썼는지 직접 썼는지, 그 문구의 분류</li>
+  <li>카드를 저장했거나 공유 창을 열었다는 사실, 아침 알림을 켰다는 사실</li>
+  <li>문제가 생겼을 때의 고정 오류 코드</li>
+</ul>
+<p>다음은 <strong>보내지 않습니다</strong>.</p>
+<ul>
+  <li>직접 쓴 문구, 받는 사람 이름, 만든 카드 이미지</li>
+  <li>공유한 대상(어느 앱·누구에게 보냈는지)</li>
+  <li>이름, 이메일, 연락처, 정확한 위치</li>
+</ul>
+<p>
+  Firebase 는 모든 기록에 앱 설치 식별자, 기기 모델, 안드로이드 버전, 앱 버전, 세션 시간, IP 로 추정한 대략적 지역을
+  덧붙입니다. Crashlytics 는 앱이 비정상 종료될 때 오류 위치와 기기 정보를 덧붙입니다.
+</p>
+
+<h2>4. 광고</h2>
+<p>
+  앱은 모든 기능이 무료이며 <strong>Google AdMob</strong> 광고로 운영됩니다. AdMob 은 광고 제공·측정을 위해 기기의
+  <strong>광고 ID</strong>와 IP 로 추정한 대략적 위치를 사용할 수 있습니다.
+</p>
+<ul>
+  <li>배너: 첫 화면과 배경 목록 아래. 카드를 꾸미는 화면과 버튼 근처에는 두지 않습니다.</li>
+  <li>전면 광고: 카드 저장이나 공유가 <strong>끝난 뒤</strong> 가끔. 저장·공유하기 전에는 광고를 띄우지 않습니다.</li>
+</ul>
+<p>광고가 뜨지 않아도 모든 기능은 그대로 동작합니다.</p>
+<p>
+  유럽경제지역·영국 등 동의가 필요한 지역에서는 광고 요청 전에 Google UMP 동의 화면이 표시되며, 앱 설정의
+  '광고 개인정보 설정'에서 언제든 다시 열 수 있습니다.
+</p>
+
+<h2>5. 권한</h2>
+<ul>
+  <li><strong>알림</strong>: 아침 인사 알림을 켤 때만 요청합니다(안드로이드 13 이상). 거절해도 카드 만들기는 그대로 됩니다.</li>
+  <li><strong>저장공간 쓰기</strong>: 안드로이드 9 이하 기기에서 카드를 갤러리에 저장할 때만 요청합니다. 그 이상 버전에서는 권한 없이 저장합니다.</li>
+</ul>
+<p>
+  위치·연락처·카메라·마이크 권한은 요청하지 않습니다. 앱과 Firebase·광고 SDK 가 인터넷, 네트워크 상태, 절전 해제(wake lock),
+  분석용 기여(attribution) 권한, 광고 ID 권한을 사용합니다(사용자에게 묻지 않는 권한).
+</p>
+
+<h2>6. 아동</h2>
+<p>이 앱은 아동을 대상으로 하지 않으며, 위의 익명 사용 기록과 광고 식별자 외에 누구의 정보도 수집하지 않습니다.</p>
+
+<h2>7. 이용자의 선택</h2>
+<p>
+  갤러리에 저장한 카드는 사진 앱에서 지울 수 있고, 앱 저장공간을 지우거나 앱을 삭제하면 앱 설정이 모두 지워집니다.
+  광고 ID 는 기기 설정 → Google → 광고에서 재설정·삭제할 수 있습니다. 설치에 연결된 분석 기록 삭제는 아래 메일로 요청할 수 있습니다.
+</p>
+
+<h2>8. 방침 변경</h2>
+<p>정보를 다루는 방식이 바뀌는 버전을 내기 전에 이 페이지를 고치고 위의 날짜를 바꿉니다.</p>
+
+<h2>9. 문의</h2>
+<p>문의: <a href="mailto:leeedaebok@gmail.com">leeedaebok@gmail.com</a></p>
+
+<hr>
+<div lang="en" id="en">
+<h1>Privacy Policy — Morning Greeting Cards</h1>
+<p class="updated">Effective: October 24, 2026 (v1.0)</p>
+
+<p>Morning Greeting Cards (Korean name 아침인사 카드 만들기, package <code>com.bok.greeting</code>) lets you pick a background
+  picture, add a greeting message, and save or share the result as an image card.</p>
+
+<h2>1. Your cards and text stay on your device</h2>
+<p>Messages you type, recipient names you add and the cards you make are created and stored <strong>only on your device</strong>.
+  There is no account, no sign-in and no server of ours that receives your cards or text. "Save" writes the image to your
+  device's photo gallery; "Share" hands the image to the app you choose (for example KakaoTalk). These images never pass through us.
+  App settings (text size, reminder time) are stored only on the device.</p>
+
+<h2>2. Background pictures</h2>
+<p>The background pictures were generated with artificial intelligence (AI) and are bundled inside the app. Nothing is downloaded
+  when you choose a background, and which picture you chose is not sent anywhere (except the category record below).</p>
+
+<h2>3. Analytics</h2>
+<p>To improve the app and fix errors we use Google Analytics for Firebase and Firebase Crashlytics to record which features are used:
+  that the home screen opened, the category of the chosen background (for example weekday, season, holiday, flowers), whether a
+  suggested or self-written message was used and its category, that a card was saved or the share sheet opened, that the morning
+  reminder was turned on, and fixed error codes.</p>
+<p>We <strong>never send</strong> the text you write, recipient names, the card images, who or which app you shared with, or your
+  name, email, contacts or precise location. Firebase adds an app-instance ID, device model, Android version, app version, session
+  time and an approximate region derived from IP; Crashlytics adds crash location and device details when the app crashes.</p>
+
+<h2>4. Ads</h2>
+<p>Every feature is free and the app shows Google AdMob ads. AdMob may use your advertising ID and an approximate location derived
+  from your IP to serve and measure ads.</p>
+<ul>
+  <li>Banner: at the bottom of the home and background list screens, never on the card editor or next to buttons.</li>
+  <li>Full-screen ad: occasionally <strong>after</strong> a card is saved or shared. Never before saving or sharing.</li>
+</ul>
+<p>All features work the same whether or not an ad is shown. Where consent is required (such as the EEA and UK) a Google UMP consent
+  form is shown before ads are requested and can be reopened from "Ad privacy settings" in the app settings.</p>
+
+<h2>5. Permissions</h2>
+<ul>
+  <li><strong>Notifications</strong>: requested only when you turn on the morning reminder (Android 13 and later). Declining does not
+      affect making cards.</li>
+  <li><strong>Storage write</strong>: requested only on Android 9 and earlier when saving a card to the gallery. Later versions save without it.</li>
+</ul>
+<p>The app does not request location, contacts, camera or microphone permission. The app and the Firebase and ad SDKs use internet,
+  network state, wake lock, attribution and advertising ID permissions (permissions that are not requested from you).</p>
+
+<h2>6. Children</h2>
+<p>This app is not directed at children and collects no information from anyone beyond the anonymous usage records and advertising
+  identifier described above.</p>
+
+<h2>7. Your choices</h2>
+<p>Saved cards can be deleted in your photo app; clearing the app's storage or uninstalling the app deletes its settings. You can reset
+  or delete your advertising ID in device Settings → Google → Ads. To request deletion of analytics data linked to your installation,
+  email us.</p>
+
+<h2>8. Changes</h2>
+<p>Before releasing a version that changes how information is handled, we update this page and the date above.</p>
+
+<h2>9. Contact</h2>
+<p><a href="mailto:leeedaebok@gmail.com">leeedaebok@gmail.com</a></p>
+</div>
+
+</body>
+</html>
