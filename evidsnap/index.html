@@ -50,7 +50,7 @@
 <ul>
   <li><strong>Usage Analytics (Google Analytics for Firebase):</strong> The App uses Google Analytics for Firebase to understand how the App is used and to improve our service. It automatically collects an app instance ID and usage events such as screen views, capture events, which overlay items are enabled (e.g., whether coordinates are shown), sharing and deletion actions, and permission outcomes. <strong>The contents of the overlay are never collected</strong> — no coordinates, address text, or your custom text is included in analytics. Only whether a setting is on or off is recorded.</li>
   <li><strong>Advertising (Google AdMob):</strong> The App shows ads served by Google AdMob, which may use your device's advertising ID and approximate location (derived from your IP address) to serve and measure ads.</li>
-  <li><strong>Weather (Open-Meteo):</strong> When the weather overlay is enabled, the App sends <strong>coordinates only</strong> to the Open-Meteo API to retrieve current weather. No identifying information is sent. See <a href="https://open-meteo.com/en/terms">Open-Meteo terms</a>.</li>
+  <li><strong>Weather (Open-Meteo, MET Norway):</strong> When the weather overlay is enabled, the App sends <strong>coordinates only</strong> to the Open-Meteo API to retrieve current weather. If Open-Meteo does not respond, the same coordinates (rounded to 4 decimal places) are sent to the MET Norway (api.met.no) weather API instead. No identifying information is sent. See <a href="https://open-meteo.com/en/terms">Open-Meteo terms</a> and <a href="https://api.met.no/doc/TermsOfService">MET Norway terms</a>. Weather data from MET Norway is licensed under CC BY 4.0.</li>
   <li><strong>Address lookup (Android Geocoder):</strong> Coordinates are converted to a readable address using the operating system's on-device service.</li>
 </ul>
 
@@ -115,7 +115,7 @@
 <ul>
   <li><strong>사용 통계 (Google Analytics for Firebase):</strong> 앱 이용 현황을 파악하고 서비스를 개선하기 위해 Google Analytics for Firebase를 사용합니다. 이를 통해 앱 인스턴스 ID와 화면 조회, 촬영 이벤트, 어떤 오버레이 항목을 켜고 촬영했는지(예: 좌표 표시 여부), 공유·삭제, 권한 허용 결과 등이 자동으로 수집됩니다. <strong>오버레이에 찍히는 내용 자체는 수집하지 않습니다</strong> — 좌표, 주소 문자열, 사용자가 입력한 문구는 분석 데이터에 포함되지 않으며, 해당 설정을 켰는지 여부만 기록됩니다.</li>
   <li><strong>광고 (Google AdMob):</strong> 앱은 Google AdMob 광고를 표시하며, 광고 송출 및 성과 측정을 위해 기기의 광고 ID(ADID)와 대략적인 위치(IP 주소 기반)가 사용될 수 있습니다.</li>
-  <li><strong>날씨 (Open-Meteo):</strong> 날씨 오버레이를 사용하는 경우 현재 날씨 조회를 위해 <strong>좌표만</strong> Open-Meteo API로 전송됩니다. 개인을 식별할 수 있는 정보는 전송되지 않습니다. <a href="https://open-meteo.com/en/terms">Open-Meteo 약관</a></li>
+  <li><strong>날씨 (Open-Meteo, 노르웨이 기상청 MET Norway):</strong> 날씨 오버레이를 사용하는 경우 현재 날씨 조회를 위해 <strong>좌표만</strong> Open-Meteo API로 전송됩니다. Open-Meteo가 응답하지 않으면 같은 좌표(소수점 4자리로 반올림)를 노르웨이 기상청(api.met.no) 날씨 API로 대신 보냅니다. 개인을 식별할 수 있는 정보는 전송되지 않습니다. <a href="https://open-meteo.com/en/terms">Open-Meteo 약관</a> · <a href="https://api.met.no/doc/TermsOfService">MET Norway 약관</a>. MET Norway 날씨 자료는 CC BY 4.0 라이선스를 따릅니다.</li>
   <li><strong>주소 변환 (Android Geocoder):</strong> 좌표를 사람이 읽을 수 있는 주소로 바꾸는 작업은 운영체제가 제공하는 기능을 단말 내에서 사용합니다.</li>
 </ul>
 
