@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침 — 불경 독송 (Buddhist Sutra Chanting)</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 4rem;
+         font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Malgun Gothic", sans-serif; }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .updated { color: #666; font-size: .9rem; margin-top: 0; }
+  ul { padding-left: 1.2rem; }
+</style>
+</head>
+<body>
+
+<p><a href="#en">English</a></p>
+
+<h1>개인정보처리방침 — 불경 독송</h1>
+<p class="updated">시행일: 2026년 11월 21일 (v1.0)</p>
+
+<p>
+  불경 독송(패키지 com.bok.bulgyeong)은 천수경·반야심경·금강경 등 불교 경전을 한문·한글 독음·우리말 풀이로 읽고,
+  목탁 박자에 맞춰 독송하고, 화면에 손가락으로 따라 쓰는 사경을 하는 앱입니다. 이 문서는 앱이 정보를 어떻게 다루는지 설명합니다.
+</p>
+
+<h2>1. 독송·사경 기록은 이 폰 안에만 있습니다</h2>
+<ul>
+  <li>독송 횟수, 사경 횟수, 읽던 위치, 보기 방식·글자 크기 같은 설정은 기기 안에만 저장됩니다.
+    계정·로그인이 없고, 이 기록을 받는 저희 서버가 없습니다.</li>
+  <li>사경 화면에 손가락으로 쓴 글씨는 <strong>저장하지 않습니다.</strong> 다음 구절로 넘기면 사라지며, 기기 밖으로 보내지도 않습니다.</li>
+  <li>경전 본문은 앱 설치 파일 안에 들어 있어 읽을 때 내려받지 않습니다.</li>
+  <li>안드로이드 자동 백업을 켜 두셨다면, 독송·사경 횟수와 설정이 사용자의 Google 계정 백업에 포함되어 새 폰으로 옮겨질 수 있습니다.</li>
+</ul>
+
+<h2>2. 목탁 소리</h2>
+<p>목탁 소리는 녹음이 아니라 앱 안에서 만든 소리이며, 켤 때만 휴대전화의 미디어 음량으로 울립니다. 마이크를 사용하지 않습니다.</p>
+
+<h2>3. 앱이 보내는 분석 정보</h2>
+<p>앱 개선과 오류 수정을 위해 Google Analytics for Firebase와 Firebase Crashlytics를 사용합니다. 보내는 것은 어떤 기능을 썼는지에 대한 짧은 기록입니다.</p>
+<ul>
+  <li>첫 화면을 열었다는 사실, 어떤 경전을 열었는지(예: 금강경)</li>
+  <li>독송이나 사경을 마쳤다는 사실과 그 경전, 보기 방식(독음·한문·풀이), 누적 횟수의 구간</li>
+  <li>목탁을 켜거나 껐다는 사실과 빠르기 구간</li>
+  <li>문제가 생겼을 때의 고정 오류 코드</li>
+</ul>
+<p>다음은 보내지 않습니다.</p>
+<ul>
+  <li>사경으로 쓴 글씨, 읽고 있던 본문의 위치</li>
+  <li>이름, 이메일, 연락처, 정확한 위치</li>
+</ul>
+<p>
+  Firebase 는 모든 기록에 앱 설치 식별자, 기기 모델, 안드로이드 버전, 앱 버전, 세션 시간, IP 로 추정한 대략적 지역을 덧붙입니다.
+  Crashlytics 는 앱이 비정상 종료될 때 오류 위치와 기기 정보를 덧붙입니다.
+</p>
+
+<h2>4. 광고</h2>
+<p>앱은 모든 기능이 무료이며 Google AdMob 광고로 운영됩니다. AdMob 은 광고 제공·측정을 위해 기기의 광고 ID와 IP 로 추정한 대략적 위치를 사용할 수 있습니다.</p>
+<ul>
+  <li>배너: 첫 화면(경전 목록) 아래에만. 경전을 읽는 화면과 사경 화면에는 두지 않습니다.</li>
+  <li>전면 광고: 독송이나 사경 한 편을 마친 뒤 가끔. 읽는 도중·쓰는 도중·앱을 닫을 때는 띄우지 않습니다.</li>
+</ul>
+<p>
+  광고가 뜨지 않아도 모든 기능은 그대로 동작합니다. 유럽경제지역·영국 등 동의가 필요한 지역에서는 광고 요청 전에
+  Google UMP 동의 화면이 표시되며, 앱 정보 화면의 '광고 개인정보 설정'에서 언제든 다시 열 수 있습니다.
+</p>
+
+<h2>5. 권한</h2>
+<p>
+  이 앱은 사용자에게 묻는 권한을 요청하지 않습니다(위치·연락처·카메라·마이크·알림·저장공간 없음).
+  앱과 Firebase·광고 SDK 가 인터넷, 네트워크 상태, 절전 해제(wake lock), 분석용 기여(attribution) 권한, 광고 ID 권한을 사용합니다(사용자에게 묻지 않는 권한).
+</p>
+
+<h2>6. 본문과 풀이</h2>
+<p>
+  경전 원문과 독음은 공유 저작물(위키문헌 등)에서 가져와 한국 독송본과 대조했으며, 우리말 풀이는 이 앱이 한문에서 직접 옮긴 참고용 풀이입니다.
+  출처는 앱의 정보 화면에 적어 두었습니다. 이 항목은 개인정보와 관계없이 안내를 위해 둡니다.
+</p>
+
+<h2>7. 아동</h2>
+<p>이 앱은 아동을 대상으로 하지 않으며, 위의 익명 사용 기록과 광고 식별자 외에 누구의 정보도 수집하지 않습니다.</p>
+
+<h2>8. 이용자의 선택</h2>
+<p>
+  앱 저장공간을 지우거나 앱을 삭제하면 독송·사경 기록과 설정이 모두 지워집니다.
+  광고 ID 는 기기 설정 → Google → 광고에서 재설정·삭제할 수 있습니다. 설치에 연결된 분석 기록 삭제는 아래 메일로 요청할 수 있습니다.
+</p>
+
+<h2>9. 방침 변경</h2>
+<p>정보를 다루는 방식이 바뀌는 버전을 내기 전에 이 페이지를 고치고 위의 날짜를 바꿉니다.</p>
+
+<h2>10. 문의</h2>
+<p>문의: leeedaebok@gmail.com</p>
+
+<hr>
+
+<h1 id="en">Privacy Policy — Buddhist Sutra Chanting</h1>
+<p class="updated">Effective: November 21, 2026 (v1.0)</p>
+
+<p>
+  Buddhist Sutra Chanting (Korean name 불경 독송, package com.bok.bulgyeong) lets you read Buddhist sutras such as the Thousand Hands
+  Sutra, the Heart Sutra and the Diamond Sutra in classical Chinese, Korean recitation reading and a plain Korean rendering, chant along
+  with a moktak (wooden block) beat, and practise sutra copying by tracing characters with your finger.
+</p>
+
+<h2>1. Your chanting and copying records stay on your device</h2>
+<p>
+  Chanting and copying counts, your reading position and display settings are stored only on your device. There is no account, no
+  sign-in and no server of ours that receives them. What you write with your finger on the copying screen is <strong>not saved</strong>:
+  it disappears when you move to the next phrase and is never sent anywhere. Sutra texts are bundled inside the app. If Android
+  auto-backup is on, your counts and settings may be included in your Google account backup and restored on a new phone.
+</p>
+
+<h2>2. Moktak sound</h2>
+<p>The moktak sound is generated inside the app, not recorded, and plays at your media volume only when you turn it on. The microphone is not used.</p>
+
+<h2>3. Analytics</h2>
+<p>
+  To improve the app and fix errors we use Google Analytics for Firebase and Firebase Crashlytics to record which features are used:
+  that the home screen opened, which sutra was opened, that a chanting or copying session was completed (with the sutra, display mode
+  and a count range), that the moktak was turned on or off (with a tempo range), and fixed error codes. We never send what you write on
+  the copying screen, your reading position, or your name, email, contacts or precise location. Firebase adds an app-instance ID, device
+  model, Android version, app version, session time and an approximate region derived from IP; Crashlytics adds crash location and device
+  details when the app crashes.
+</p>
+
+<h2>4. Ads</h2>
+<p>
+  Every feature is free and the app shows Google AdMob ads. AdMob may use your advertising ID and an approximate location derived from
+  your IP to serve and measure ads. Banner: only at the bottom of the home (sutra list) screen, never on the reading or copying screens.
+  Full-screen ad: occasionally after you finish a chanting or copying session; never while reading or writing, and never when you leave
+  the app. All features work the same whether or not an ad is shown. Where consent is required (such as the EEA and UK) a Google UMP
+  consent form is shown before ads are requested and can be reopened from "Ad privacy settings" on the app's info screen.
+</p>
+
+<h2>5. Permissions</h2>
+<p>
+  The app does not request any permission from you (no location, contacts, camera, microphone, notifications or storage). The app and the
+  Firebase and ad SDKs use internet, network state, wake lock, attribution and advertising ID permissions (permissions that are not requested from you).
+</p>
+
+<h2>6. Texts and renderings</h2>
+<p>
+  Sutra originals and readings come from public-domain sources (such as Wikisource) checked against Korean chanting editions; the Korean
+  renderings were translated by this app directly from the classical Chinese for reference. Sources are listed on the app's info screen.
+</p>
+
+<h2>7. Children</h2>
+<p>This app is not directed at children and collects no information from anyone beyond the anonymous usage records and advertising identifier described above.</p>
+
+<h2>8. Your choices</h2>
+<p>
+  Clearing the app's storage or uninstalling the app deletes your records and settings. You can reset or delete your advertising ID in
+  device Settings → Google → Ads. To request deletion of analytics data linked to your installation, email us.
+</p>
+
+<h2>9. Changes</h2>
+<p>Before releasing a version that changes how information is handled, we update this page and the date above.</p>
+
+<h2>10. Contact</h2>
+<p>leeedaebok@gmail.com</p>
+
+</body>
+</html>
