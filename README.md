@@ -16,6 +16,7 @@
 | 동네복지 | com.bok.dongnebokji | https://leeedaebok.github.io/privacy-policies/dongnebokji/ |
 | 24시 약국 찾기 | com.bok.yakguk | https://leeedaebok.github.io/privacy-policies/yakguk/ |
 | 전용평 실거래 | com.bok.jeonyong | https://leeedaebok.github.io/privacy-policies/jeonyong/ |
+| Stoic Reader | com.bok.stoicreader | https://leeedaebok.github.io/privacy-policies/stoicreader/ |
 | EvidSnap | com.bok.evidsnap | https://leeedaebok.github.io/privacy-policies/evidsnap/ |
 | Global Size Guide | com.bok.globalsizeguide | https://leeedaebok.github.io/privacy-policies/globalsizeguide/ |
 | 사업공고 알리미 | com.bok.gonggoalimi | https://leeedaebok.github.io/privacy-policies/gonggoalimi/ |
